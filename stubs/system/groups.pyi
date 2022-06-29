@@ -1,0 +1,6 @@
+from typing import List, Union
+
+String = Union[str, unicode]
+
+def loadFromFile(filePath: String, projectName: String, mode: int) -> None: ...
+def removeGroups(projectName: String, paths: List[String]) -> None: ...
