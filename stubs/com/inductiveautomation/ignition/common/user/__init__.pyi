@@ -33,7 +33,7 @@ class User:
     def getScheduleAdjustments(self) -> List[ScheduleAdjustment]: ...
 
 class BasicUser(User):
-    contactInfo: List[ContactInfo]
+    contactInfo: Optional[List[ContactInfo]]
     id: Any
     profileName: String
     roles: List[String]
