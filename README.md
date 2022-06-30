@@ -18,6 +18,18 @@ To use ignition-api-stubs, you may install it with `pip`. It requires Python 3.6
 python -m pip install ignition-api-stubs
 ```
 
+To run `mypy` against your code, execute the following command passing the source directory (typycally `src`) or a single file:
+
+```sh
+mypy --py2 src
+```
+
+Or
+
+```sh
+mypy --py2 code.py
+```
+
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/ignition-api/.github/blob/main/CONTRIBUTING.md#contributing-to-ignition-api).
