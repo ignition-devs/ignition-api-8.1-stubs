@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.1.18a2] - 2022-06-29
+
+### Miscellaneous Tasks
+
+- add types-enum34 to install_requires ([98f3b3f](https://github.com/ignition-api/stubs/commit/98f3b3f61ebebaf5e4f937565d3febb30bea3494))
+
 ## [8.1.18a1] - 2022-06-29
 
 ### Bug Fixes
