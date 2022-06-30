@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.1.18a1] - 2022-06-29
+
+### Bug Fixes
+
+- mypy warnings ([6f10fe0](https://github.com/ignition-api/stubs/commit/6f10fe0733cca0c7015edfd45d11c16f1903578f))
+- mypy warnings (#1)
+
+### CI
+
+- update twine token ([ebe973c](https://github.com/ignition-api/stubs/commit/ebe973c20ff1a7f9fd939db48d8b3d49033fc828))
+
 ## [8.1.18a0] - 2022-06-29
 
 ### Miscellaneous Tasks
