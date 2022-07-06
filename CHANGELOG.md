@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.1.18a3] - 2022-07-05
+
+### Bug Fixes
+
+- remove Python 3.11 ([65dd394](https://github.com/ignition-api/stubs/commit/65dd39449b738e36c7ed592889b3adeecbfae4eb))
+
+### CI
+
+- add ci workflow (#3)
+- use Python 3.6 and above for mypy analysis ([3c0c420](https://github.com/ignition-api/stubs/commit/3c0c420c580c981915a6eb34dfed17357002463c))
+
+### Documentation
+
+- add usage instructions to README (#4)
+
+### Build
+
+- update required packages (#5)
+
 ## [8.1.18a2] - 2022-06-29
 
 ### Miscellaneous Tasks
