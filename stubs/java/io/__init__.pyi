@@ -1,4 +1,7 @@
-from java.lang import Object
+from java.lang import AutoCloseable, Object
+
+class Closeable(AutoCloseable):
+    def close(self) -> None: ...
 
 class FileDescriptor(Object):
     def sync(self) -> None: ...
