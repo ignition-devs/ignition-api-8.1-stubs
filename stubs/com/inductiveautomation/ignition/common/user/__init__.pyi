@@ -1,9 +1,7 @@
 from com.inductiveautomation.ignition.common import QualifiedPath
 from com.inductiveautomation.ignition.common.user.schedule import ScheduleAdjustment
-from java.lang import Object
-from typing import Any, List, Optional, Union
-
-String = Union[str, unicode]
+from java.lang import Object, String
+from typing import Any, List, Optional
 
 class ContactInfo(Object):
     contactType: String
@@ -38,7 +36,13 @@ class BasicUser(User):
     profileName: String
     roles: List[String]
     scheduleAdjustments: List[ScheduleAdjustment]
-    def __init__(self, profileName: String, id_: Any, roles: List[String], contactInfo: Optional[List[ContactInfo]] = ...) -> None: ...
+    def __init__(
+        self,
+        profileName: String,
+        id_: Any,
+        roles: List[String],
+        contactInfo: Optional[List[ContactInfo]] = ...,
+    ) -> None: ...
     def getContactInfo(self) -> List[ContactInfo]: ...
     def getId(self) -> Any: ...
     def getPath(self) -> QualifiedPath: ...
