@@ -1,8 +1,7 @@
 from java.awt import Container, Frame
+from java.lang import String
 from javax.swing.text import JTextComponent
-from typing import Any, List, Optional, Union
-
-String = Union[str, unicode]
+from typing import Any, List, Optional
 
 class Icon:
     def getIconHeight(self) -> None: ...
@@ -58,13 +57,43 @@ class JOptionPane(JComponent):
     NO_OPTION: int
     CANCEL_OPTION: int
     @staticmethod
-    def showConfirmDialog(parentComponent: Optional[Any], message: Any, title: Optional[String] = ..., optionType: Optional[int] = ..., messageType: Optional[int] = ..., icon: Optional[Icon] = ...) -> int: ...
+    def showConfirmDialog(
+        parentComponent: Optional[Any],
+        message: Any,
+        title: Optional[String] = ...,
+        optionType: Optional[int] = ...,
+        messageType: Optional[int] = ...,
+        icon: Optional[Icon] = ...,
+    ) -> int: ...
     @staticmethod
-    def showInputDialog(parentComponent: Optional[Any], message: Any, title: Optional[String] = ..., messageType: Optional[int] = ..., icon: Optional[Icon] = ..., selectionValues: Optional[List[Any]] = ..., initialSelectionValue: Optional[Any] = ...) -> String: ...
+    def showInputDialog(
+        parentComponent: Optional[Any],
+        message: Any,
+        title: Optional[String] = ...,
+        messageType: Optional[int] = ...,
+        icon: Optional[Icon] = ...,
+        selectionValues: Optional[List[Any]] = ...,
+        initialSelectionValue: Optional[Any] = ...,
+    ) -> String: ...
     @staticmethod
-    def showMessageDialog(parentComponent: Optional[Any], message: Any, title: Optional[String] = ..., messageType: Optional[int] = ..., icon: Optional[Icon] = ...) -> None: ...
+    def showMessageDialog(
+        parentComponent: Optional[Any],
+        message: Any,
+        title: Optional[String] = ...,
+        messageType: Optional[int] = ...,
+        icon: Optional[Icon] = ...,
+    ) -> None: ...
     @staticmethod
-    def showOptionDialog(parentComponent: Optional[Any], message: Any, title: Optional[String] = ..., optionType: Optional[int] = ..., messageType: Optional[int] = ..., icon: Optional[Icon] = ..., options: Optional[List[Any]] = ..., initialValue: Optional[Any] = ...) -> int: ...
+    def showOptionDialog(
+        parentComponent: Optional[Any],
+        message: Any,
+        title: Optional[String] = ...,
+        optionType: Optional[int] = ...,
+        messageType: Optional[int] = ...,
+        icon: Optional[Icon] = ...,
+        options: Optional[List[Any]] = ...,
+        initialValue: Optional[Any] = ...,
+    ) -> int: ...
 
 class JPanel(JComponent): ...
 

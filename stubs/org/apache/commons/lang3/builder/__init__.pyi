@@ -1,7 +1,5 @@
-from java.lang import Object, StringBuffer
-from typing import Any, Union
-
-String = Union[str, unicode]
+from java.lang import Object, String, StringBuffer
+from typing import Any
 
 class ToStringStyle(Object):
     DEFAULT_STYLE: ToStringStyle
