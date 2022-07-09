@@ -1,9 +1,13 @@
 from com.inductiveautomation.ignition.common import BasicDataset
-from typing import Any, Dict, Optional, Union
+from java.lang import String
+from typing import Any, Dict, Optional
 
-String = Union[str, unicode]
-
-def addDevice(deviceType: String, deviceName: String, deviceProps: Dict[String, Any], description: Optional[String] = ...) -> None: ...
+def addDevice(
+    deviceType: String,
+    deviceName: String,
+    deviceProps: Dict[String, Any],
+    description: Optional[String] = ...,
+) -> None: ...
 def getDeviceHostname(deviceName: String) -> String: ...
 def listDevices() -> BasicDataset: ...
 def refreshBrowse(deviceName: String) -> None: ...

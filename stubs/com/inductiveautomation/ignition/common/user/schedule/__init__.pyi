@@ -1,8 +1,5 @@
-from java.lang import Object
+from java.lang import Object, String
 from java.util import Date
-from typing import Union
-
-String = Union[str, unicode]
 
 class AbstractScheduleModel(Object):
     def getScheduleForDay(self, cal) -> None: ...

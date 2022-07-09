@@ -1,6 +1,5 @@
-from typing import List, Union
-
-String = Union[str, unicode]
+from java.lang import String
+from typing import List
 
 def getProjectName() -> String: ...
 def getProjectNames() -> List[String]: ...

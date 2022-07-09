@@ -1,8 +1,6 @@
 from java.io import InputStream
-from java.lang import Object
+from java.lang import Object, String
 from typing import Any, Optional, Tuple, Union
-
-String = Union[str, unicode]
 
 class Version(Object):
     build: int
@@ -13,7 +11,15 @@ class Version(Object):
     beta: int
     rc: int
     snapshot: bool
-    def __init__(self, major: int = ..., minor: int = ..., rev: int = ..., build: int = ..., beta: int = ..., rc: int = ...) -> None: ...
+    def __init__(
+        self,
+        major: int = ...,
+        minor: int = ...,
+        rev: int = ...,
+        build: int = ...,
+        beta: int = ...,
+        rc: int = ...,
+    ) -> None: ...
     def __eq__(self, other: Any) -> bool: ...
     def compareTo(self, that: Version) -> Optional[int]: ...
     def exists(self) -> bool: ...
