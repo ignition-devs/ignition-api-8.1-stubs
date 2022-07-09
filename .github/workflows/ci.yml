@@ -22,4 +22,4 @@ jobs:
         python -m pip install types-enum34
     - name: Analysing the code with mypy
       run: |
-        mypy --py2 stubs
+        mypy stubs
