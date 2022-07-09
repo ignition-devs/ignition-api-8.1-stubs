@@ -4,6 +4,7 @@
 ![GitHub last commit (stubs)](https://img.shields.io/github/last-commit/ignition-api/stubs/main)
 [![GitHub contributors](https://img.shields.io/github/contributors/ignition-api/stubs)](https://github.com/ignition-api/stubs/graphs/contributors)
 [![Downloads](https://pepy.tech/badge/ignition-api-stubs)](https://pepy.tech/project/ignition-api-stubs)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-api/stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-api/stubs/main)
 [![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/ignition-api/discussions/discussions)
 
 This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`ignition-api/8.1`](https://github.com/ignition-api/8.1). These files were generated using `mypy`'s [`stubgen`](https://mypy.readthedocs.io/en/stable/stubgen.html).
