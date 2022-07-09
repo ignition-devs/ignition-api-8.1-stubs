@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.1.18a4] - 2022-07-09
+
+### CI
+
+- use settings from pyproject.toml for mypy (#8)
+
+### Documentation
+
+- add pre-commit.ci badge to README (#11)
+
+### Miscellaneous Tasks
+
+- update stubs from latest ignition-api (#9)
+
+### Build
+
+- add pre-commit configuration file (#7)
+
 ## [8.1.18a3] - 2022-07-05
 
 ### Bug Fixes
