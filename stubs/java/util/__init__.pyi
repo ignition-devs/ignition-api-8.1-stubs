@@ -1,5 +1,6 @@
-from java.lang import Object
 from typing import Optional
+
+from java.lang import Object
 
 class Date(Object):
     def __init__(self, date: Optional[long] = ...) -> None: ...

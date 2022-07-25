@@ -1,6 +1,7 @@
+from typing import Any, List, Optional
+
 from com.inductiveautomation.ignition.modules.serial.scripting import SerialScriptModule
 from java.lang import String
-from typing import Any, List, Optional
 
 PortManager = SerialScriptModule.PortManager
 SerialConfigurator = SerialScriptModule.SerialConfigurator

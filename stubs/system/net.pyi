@@ -1,6 +1,7 @@
+from typing import Any, Callable, Dict, List, Optional
+
 from com.inductiveautomation.ignition.common.script.builtin.http import JythonHttpClient
 from java.lang import String
-from typing import Any, Callable, Dict, List, Optional
 
 def getExternalIpAddress() -> String: ...
 def getHostName() -> String: ...

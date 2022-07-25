@@ -1,8 +1,9 @@
+from typing import List, Optional
+
 from com.inductiveautomation.ignition.common.i18n import LocalizedString
 from com.inductiveautomation.ignition.common.model.values import Quality, QualityCode
 from java.lang import Enum, Object, String
 from java.util import Locale
-from typing import List, Optional
 
 class DataQuality(Object):
     @staticmethod

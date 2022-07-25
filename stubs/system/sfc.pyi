@@ -1,7 +1,8 @@
+from typing import Any, Dict, Optional
+
 from com.inductiveautomation.ignition.common import BasicDataset
 from com.inductiveautomation.sfc.api import PyChartScope
 from java.lang import String
-from typing import Any, Dict, Optional
 
 def cancelChart(instanceId: String) -> None: ...
 def getRunningCharts(chartPath: Optional[String] = ...) -> BasicDataset: ...

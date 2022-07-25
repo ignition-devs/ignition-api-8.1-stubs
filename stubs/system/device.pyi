@@ -1,6 +1,7 @@
+from typing import Any, Dict, Optional
+
 from com.inductiveautomation.ignition.common import BasicDataset
 from java.lang import String
-from typing import Any, Dict, Optional
 
 def addDevice(
     deviceType: String,

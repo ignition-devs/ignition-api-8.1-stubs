@@ -5,6 +5,7 @@ requires = [
 ]
 
 [tool.isort]
+extra_standard_library = ["typing"]
 profile = "black"
 py_version = 27
 

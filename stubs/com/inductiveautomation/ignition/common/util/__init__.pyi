@@ -1,8 +1,9 @@
+from typing import Any, Optional, Union
+
 from java.io import Closeable
 from java.lang import AutoCloseable, Class, Object, String, Throwable
 from org.apache.commons.lang3.builder import ToStringStyle
 from org.slf4j import Logger
-from typing import Any, Optional, Union
 
 class LoggerEx(Object):
     DEFAULT_TO_STRING_STYLE: ToStringStyle

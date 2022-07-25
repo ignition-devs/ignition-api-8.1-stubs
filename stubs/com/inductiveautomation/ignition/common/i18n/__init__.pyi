@@ -1,6 +1,7 @@
+from typing import Any, List, Optional
+
 from java.lang import Object, String
 from java.util import Locale
-from typing import Any, List, Optional
 
 class LocalizedString(Object):
     def __init__(self, *args: Any) -> None: ...

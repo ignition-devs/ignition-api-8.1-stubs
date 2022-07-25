@@ -1,3 +1,5 @@
+from typing import Any, List, Optional, Union
+
 from com.inductiveautomation.ignition.common.model.values import (
     BasicQualifiedValue,
     QualityCode,
@@ -6,7 +8,6 @@ from com.inductiveautomation.ignition.common.opc import BasicOPCBrowseElement
 from com.inductiveautomation.ignition.common.script.builtin import AbstractOPCUtilities
 from com.inductiveautomation.ignition.common.script.builtin.ialabs import OPCBrowseTag
 from java.lang import String
-from typing import Any, List, Optional, Union
 
 PyOPCTag = AbstractOPCUtilities.PyOPCTag
 

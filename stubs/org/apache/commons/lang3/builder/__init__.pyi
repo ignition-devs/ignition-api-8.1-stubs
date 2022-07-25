@@ -1,5 +1,6 @@
-from java.lang import Object, String, StringBuffer
 from typing import Any
+
+from java.lang import Object, String, StringBuffer
 
 class ToStringStyle(Object):
     DEFAULT_STYLE: ToStringStyle

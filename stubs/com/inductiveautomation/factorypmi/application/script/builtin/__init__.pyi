@@ -1,10 +1,11 @@
+from typing import Any, Dict, Optional, Union
+
 from com.inductiveautomation.factorypmi.application import FPMIWindow
 from java.awt import Component
 from java.awt.image import BufferedImage
 from java.lang import Object, String
 from java.util import EventObject
 from org.python.core import PyObject
-from typing import Any, Dict, Optional, Union
 
 class INavUtilities:
     def centerWindow(self, arg: Union[FPMIWindow, String]) -> None: ...

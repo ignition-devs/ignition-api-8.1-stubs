@@ -1,8 +1,9 @@
+from typing import Any, Dict, Optional, Union
+
 from com.inductiveautomation.factorypmi.application import FPMIWindow
 from com.inductiveautomation.factorypmi.application.script.builtin import NavUtilities
 from java.lang import String
 from java.util import EventObject
-from typing import Any, Dict, Optional, Union
 
 def centerWindow(arg: Union[String, FPMIWindow]) -> None: ...
 def closeParentWindow(event: EventObject) -> None: ...

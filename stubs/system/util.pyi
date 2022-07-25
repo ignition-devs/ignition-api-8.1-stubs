@@ -1,3 +1,5 @@
+from typing import Any, Callable, Dict, Iterable, List, Optional, Union
+
 from com.inductiveautomation.ignition.common import BasicDataset
 from com.inductiveautomation.ignition.common.model import Version
 from com.inductiveautomation.ignition.common.script.builtin import (
@@ -7,7 +9,6 @@ from com.inductiveautomation.ignition.common.script.builtin import (
 from com.inductiveautomation.ignition.common.util import LoggerEx
 from java.lang import String, Thread
 from java.util import Date
-from typing import Any, Callable, Dict, Iterable, List, Optional, Union
 
 PyDataSet = DatasetUtilities.PyDataSet
 RequestImpl = SystemUtilities.RequestImpl

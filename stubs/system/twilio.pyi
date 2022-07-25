@@ -1,6 +1,7 @@
+from typing import List, Sequence
+
 from com.inductiveautomation.ignition.common import BasicDataset
 from java.lang import String
-from typing import List, Sequence
 
 def getAccounts() -> List[String]: ...
 def getAccountsDataset() -> BasicDataset: ...

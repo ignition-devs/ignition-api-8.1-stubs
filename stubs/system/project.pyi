@@ -1,5 +1,6 @@
-from java.lang import String
 from typing import List
+
+from java.lang import String
 
 def getProjectName() -> String: ...
 def getProjectNames() -> List[String]: ...

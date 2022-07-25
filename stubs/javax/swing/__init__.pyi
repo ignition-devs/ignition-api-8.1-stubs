@@ -1,7 +1,8 @@
+from typing import Any, List, Optional
+
 from java.awt import Container, Frame
 from java.lang import String
 from javax.swing.text import JTextComponent
-from typing import Any, List, Optional
 
 class Icon:
     def getIconHeight(self) -> None: ...
