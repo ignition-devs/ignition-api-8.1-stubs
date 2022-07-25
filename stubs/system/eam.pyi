@@ -1,8 +1,9 @@
+from typing import List, Optional
+
 from com.inductiveautomation.ignition.common import BasicDataset
 from com.inductiveautomation.ignition.common.messages import UIResponse
 from java.lang import String
 from java.util import Date
-from typing import List, Optional
 
 def getGroups() -> List[String]: ...
 def queryAgentHistory(

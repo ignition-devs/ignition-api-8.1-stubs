@@ -1,6 +1,7 @@
+from typing import Any, Optional, Tuple, Union
+
 from java.io import InputStream
 from java.lang import Object, String
-from typing import Any, Optional, Tuple, Union
 
 class Version(Object):
     build: int

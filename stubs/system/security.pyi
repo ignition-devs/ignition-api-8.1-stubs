@@ -1,6 +1,7 @@
+from typing import Optional, Tuple
+
 from java.lang import String
 from java.util import EventObject
-from typing import Optional, Tuple
 
 def getRoles() -> Tuple[String, ...]: ...
 def getUserRoles(

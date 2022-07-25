@@ -1,9 +1,10 @@
+from typing import Any, List
+
 from com.inductiveautomation.ignition.common.browsing import Results
 from com.inductiveautomation.ignition.common.model.values import QualityCode
 from com.inductiveautomation.ignition.common.sqltags.history import AggregateInfo
 from java.lang import String
 from java.util import Date
-from typing import Any, List
 
 def browse(root: String) -> List[Results]: ...
 def getAggregates(serverName: String) -> List[AggregateInfo]: ...

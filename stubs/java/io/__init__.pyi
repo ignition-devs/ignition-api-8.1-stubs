@@ -1,5 +1,6 @@
-from java.lang import Appendable, AutoCloseable, CharSequence, Object
 from typing import Any, Union
+
+from java.lang import Appendable, AutoCloseable, CharSequence, Object
 
 class Closeable(AutoCloseable):
     def close(self) -> None: ...

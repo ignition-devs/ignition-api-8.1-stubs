@@ -1,5 +1,6 @@
-from java.lang import Enum, Object
 from typing import List
+
+from java.lang import Enum, Object
 
 class OPCBrowseElement:
     def getDataType(self) -> None: ...

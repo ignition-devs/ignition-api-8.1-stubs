@@ -1,3 +1,5 @@
+from typing import Any, List, Optional
+
 from com.inductiveautomation.ignition.common import BasicDataset
 from com.inductiveautomation.ignition.common.script.builtin import (
     DatasetUtilities,
@@ -6,9 +8,49 @@ from com.inductiveautomation.ignition.common.script.builtin import (
 from java.lang import String
 from java.util import Date
 from javax.swing import JComponent
-from typing import Any, List, Optional
 
 PyDataSet = DatasetUtilities.PyDataSet
+BIT: int
+REAL: int
+LONGVARCHAR: int
+LONGVARBINARY: int
+TINYINT: int
+DOUBLE: int
+DATE: int
+NULL: int
+SMALLINT: int
+NUMERIC: int
+TIME: int
+ROWID: int
+INTEGER: int
+DECIMAL: int
+TIMESTAMP: int
+CLOB: int
+BIGINT: int
+CHAR: int
+BINARY: int
+NCLOB: int
+FLOAT: int
+VARCHAR: int
+VARBINARY: int
+BLOB: int
+NCHAR: int
+NVARCHAR: int
+LONGNVARCHAR: int
+BOOLEAN: int
+ORACLE_CURSOR: int
+DISTINCT: int
+STRUCT: int
+REF: int
+JAVA_OBJECT: int
+SQLXML: int
+ARRAY: int
+DATALINK: int
+OTHER: int
+READ_COMMITTED: int
+READ_UNCOMMITTED: int
+REPEATABLE_READ: int
+SERIALIZABLE: int
 
 def addDatasource(
     jdbcDriver: String,

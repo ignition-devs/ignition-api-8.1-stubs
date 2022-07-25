@@ -1,8 +1,9 @@
+from typing import Any, Dict, List, Optional, Tuple, Union
+
 from com.inductiveautomation.ignition.common.alarming.evaluation import ShelvedPath
 from com.inductiveautomation.ignition.common.alarming.query import AlarmQueryResultImpl
 from java.lang import String
 from java.util import Date
-from typing import Any, Dict, List, Optional, Tuple, Union
 
 def acknowledge(
     alarmIds: List[String], notes: String, username: Optional[String] = ...

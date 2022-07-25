@@ -1,5 +1,6 @@
-from java.lang import String
 from typing import Any, List, Optional
+
+from java.lang import String
 
 def fileExists(filepath: String) -> bool: ...
 def getTempFile(extension: String) -> String: ...

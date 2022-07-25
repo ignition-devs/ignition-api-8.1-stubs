@@ -1,5 +1,6 @@
-from java.lang import String
 from typing import List
+
+from java.lang import String
 
 def loadFromFile(filePath: String, projectName: String, mode: int) -> None: ...
 def removeGroups(projectName: String, paths: List[String]) -> None: ...

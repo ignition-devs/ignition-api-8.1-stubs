@@ -1,6 +1,7 @@
+from typing import Any, Iterable
+
 from com.inductiveautomation.ignition.common.config import BasicPropertySet
 from org.python.core import PyObject
-from typing import Any, Iterable
 
 class AlarmEvent:
     def __iter__(self) -> Iterable: ...

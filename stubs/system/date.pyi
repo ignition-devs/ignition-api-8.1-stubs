@@ -1,6 +1,7 @@
+from typing import Optional
+
 from java.lang import String
 from java.util import Date, Locale
-from typing import Optional
 
 def addDays(date: Date, value: int) -> Date: ...
 def addHours(date: Date, value: int) -> Date: ...

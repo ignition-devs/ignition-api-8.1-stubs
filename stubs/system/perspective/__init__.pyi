@@ -1,6 +1,7 @@
+from typing import Any, Dict, List, Optional
+
 from com.inductiveautomation.ignition.common.script.adapters import PyJsonObjectAdapter
 from java.lang import String
-from typing import Any, Dict, List, Optional
 
 def alterLogging(
     remoteLoggingEnabled: bool = ...,

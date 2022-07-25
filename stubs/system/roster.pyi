@@ -1,6 +1,7 @@
+from typing import Dict, List
+
 from com.inductiveautomation.ignition.common.user import PyUser
 from java.lang import String
-from typing import Dict, List
 
 def addUsers(rosterName: String, users: List[PyUser]) -> None: ...
 def createRoster(name: String, description: String) -> None: ...

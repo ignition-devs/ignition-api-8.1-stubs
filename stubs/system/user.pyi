@@ -1,3 +1,5 @@
+from typing import List, Optional, Union
+
 from com.inductiveautomation.ignition.common.messages import UIResponse
 from com.inductiveautomation.ignition.common.user import PyUser, UserSourceMeta
 from com.inductiveautomation.ignition.common.user.schedule import (
@@ -7,7 +9,6 @@ from com.inductiveautomation.ignition.common.user.schedule import (
 )
 from java.lang import String
 from java.util import Date
-from typing import List, Optional, Union
 
 def addCompositeSchedule(
     name: String,

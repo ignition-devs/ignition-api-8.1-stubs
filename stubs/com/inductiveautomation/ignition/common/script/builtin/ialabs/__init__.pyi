@@ -1,8 +1,9 @@
+from typing import Optional
+
 from com.inductiveautomation.ignition.common.opc import BrowseElementType
 from com.inductiveautomation.ignition.common.sqltags.model.types import DataType
 from com.inductiveautomation.ignition.common.tags.config.types import TagObjectType
 from java.lang import Class, Object
-from typing import Optional
 
 class BrowseTag(Object):
     dataType: DataType

@@ -1,6 +1,7 @@
+from typing import Any, List, Optional
+
 from java.lang import String
 from system.bacnet.enumerated import ObjectType, PropertyIdentifier
-from typing import Any, List, Optional
 
 def readRaw(
     deviceName: String,

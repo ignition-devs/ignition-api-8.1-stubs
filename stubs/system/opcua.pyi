@@ -1,5 +1,6 @@
-from java.lang import String
 from typing import Any, Dict, List, Tuple
+
+from java.lang import String
 
 def addConnection(
     name: String,

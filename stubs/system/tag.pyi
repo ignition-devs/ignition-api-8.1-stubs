@@ -1,3 +1,5 @@
+from typing import Any, Callable, Dict, List, Optional
+
 from com.inductiveautomation.ignition.common import BasicDataset
 from com.inductiveautomation.ignition.common.browsing import Results
 from com.inductiveautomation.ignition.common.model.values import (
@@ -9,7 +11,6 @@ from com.inductiveautomation.ignition.common.sqltags.history.annotations import 
 )
 from java.lang import String
 from java.util import Date
-from typing import Any, Callable, Dict, List, Optional
 
 def browse(path: String, filter: Optional[Dict[String, Any]] = ...) -> Results: ...
 def browseHistoricalTags(

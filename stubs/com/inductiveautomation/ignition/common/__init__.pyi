@@ -1,7 +1,8 @@
+from typing import Any, List, Optional, Union
+
 from com.inductiveautomation.ignition.common.model.values import QualityCode
 from com.inductiveautomation.ignition.common.sqltags.model.types import DataQuality
 from java.lang import Class, Object, String
-from typing import Any, List, Optional, Union
 
 class Dataset:
     def binarySearch(self, column: int, key: Any) -> int: ...

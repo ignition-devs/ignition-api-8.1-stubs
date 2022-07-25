@@ -1,5 +1,6 @@
-from java.lang import String
 from typing import List, Optional, Union
+
+from java.lang import String
 
 def directOperateAnalog(
     deviceName: String,

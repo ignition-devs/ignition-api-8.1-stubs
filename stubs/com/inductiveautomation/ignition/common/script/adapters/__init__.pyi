@@ -1,6 +1,7 @@
+from typing import Optional
+
 from java.lang import Object
 from org.python.core import PyObject
-from typing import Optional
 
 class PyJsonObjectAdapter(Object):
     def __init__(self, obj) -> None: ...

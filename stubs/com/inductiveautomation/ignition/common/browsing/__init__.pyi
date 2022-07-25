@@ -1,5 +1,6 @@
-from java.lang import Object
 from typing import Optional
+
+from java.lang import Object
 
 class Result:
     def getDisplayPath(self) -> None: ...

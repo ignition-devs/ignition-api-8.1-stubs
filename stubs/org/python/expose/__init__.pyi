@@ -1,6 +1,7 @@
+from typing import Any
+
 from java.lang import Class
 from java.lang import String as String
-from typing import Any
 
 class TypeBuilder:
     def getBase(self) -> Class: ...
