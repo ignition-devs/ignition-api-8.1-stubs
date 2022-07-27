@@ -12,7 +12,7 @@ def copyEquipment(
     passiveAddress: String,
     passivePort: int,
     deviceId: int,
-    dbTablePrefix: String = ...,
+    dbTablePrefix: Optional[String] = ...,
     description: Optional[String] = ...,
 ) -> None: ...
 def deleteToolProgram(ppid: String) -> None: ...

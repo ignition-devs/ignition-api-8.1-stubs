@@ -53,7 +53,7 @@ def getSessionInfo(
 def getSystemFlags() -> int: ...
 def getVersion() -> Version: ...
 def invokeAsynchronous(
-    function: Callable,
+    function: Callable[..., Any],
     args: Optional[Iterable[Any]] = ...,
     kwargs: Optional[Dict[String, Any]] = ...,
     description: Optional[String] = ...,
