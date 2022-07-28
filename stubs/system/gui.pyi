@@ -10,6 +10,14 @@ from java.org.jdesktop.core.animation.timing import Animator
 from java.util import EventObject
 from javax.swing import JComponent, JFrame, JPopupMenu
 
+ACCL_NONE: int
+ACCL_CONSTANT: int
+ACCL_FAST_TO_SLOW: int
+ACCL_SLOW_TO_FAST: int
+ACCL_EASE: int
+COORD_SCREEN: int
+COORD_DESIGNER: int
+
 def chooseColor(initialColor: Color, dialogTitle: Optional[String] = ...) -> Color: ...
 def closeDesktop(handle: String) -> None: ...
 def color(*args: Any) -> Color: ...
