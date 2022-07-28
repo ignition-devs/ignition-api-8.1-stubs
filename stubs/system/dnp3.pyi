@@ -2,6 +2,14 @@ from typing import List, Optional, Union
 
 from java.lang import String
 
+NUL: int
+PULSE_ON: int
+PULSE_OFF: int
+LATCH_ON: int
+LATCH_OFF: int
+CLOSE: int
+TRIP: int
+
 def directOperateAnalog(
     deviceName: String,
     index: int,
