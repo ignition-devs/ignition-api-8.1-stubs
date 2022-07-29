@@ -3,6 +3,12 @@ from typing import Any, Dict, List, Optional
 from com.inductiveautomation.ignition.common.script.adapters import PyJsonObjectAdapter
 from java.lang import String
 
+def alterDock(
+    dockId: String,
+    config: Optional[Dict[String, Any]] = ...,
+    sessionId: String = ...,
+    pageId: String = ...,
+) -> None: ...
 def alterLogging(
     remoteLoggingEnabled: bool = ...,
     level: String = ...,
