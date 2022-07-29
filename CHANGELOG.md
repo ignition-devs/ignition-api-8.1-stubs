@@ -1,4 +1,10 @@
-## Unreleased
+## v8.1.19b0 (2022-07-29)
+
+### Feat
+
+- **system**: add new perspective and tag functions (#17)
+- **system**: add constants to __all__ (#16)
+- improve type hints (#15)
 
 ## v8.1.18a4 (2022-07-09)
 
