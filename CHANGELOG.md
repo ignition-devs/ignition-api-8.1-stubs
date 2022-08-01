@@ -1,3 +1,9 @@
+## v8.1.19b1 (2022-08-01)
+
+### Fix
+
+- **ia**: make class' properties accessible (#20)
+
 ## v8.1.19b0 (2022-07-29)
 
 ### Feat
