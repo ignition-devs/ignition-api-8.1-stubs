@@ -50,7 +50,7 @@ def query(
     provider: Optional[String] = ...,
     query: Optional[Dict[String, Any]] = ...,
     limit: Optional[int] = ...,
-    continuation: Optional[Any] = ...,
+    continuation: Optional[String] = ...,
 ) -> Results: ...
 def queryAnnotations(
     paths: List[String],
