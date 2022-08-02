@@ -47,11 +47,11 @@ def move(
     tags: String, destination: String, collisionPolicy: String = ...
 ) -> List[QualityCode]: ...
 def query(
-    provider: String,
-    query: Dict[String, Any],
+    provider: Optional[String] = ...,
+    query: Optional[Dict[String, Any]] = ...,
     limit: Optional[int] = ...,
-    continuationPoint: Optional[Any] = ...,
-) -> BasicDataset: ...
+    continuation: Optional[Any] = ...,
+) -> Results: ...
 def queryAnnotations(
     paths: List[String],
     startTime: Optional[Date] = ...,

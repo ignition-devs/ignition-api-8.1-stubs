@@ -60,6 +60,9 @@ class CompositeScheduleModel(AbstractScheduleModel):
     def getModels(self) -> None: ...
 
 class HolidayModel(Object):
+    date: Date
+    name: String
+    repeatAnnually: bool
     def __init__(self, name: String, date: Date, repeatAnnually: bool) -> None: ...
     def getDate(self) -> Date: ...
     def getName(self) -> String: ...
@@ -70,6 +73,10 @@ class HolidayModel(Object):
     def setRepeatAnnually(self, repeatAnnually: bool) -> None: ...
 
 class ScheduleAdjustment(Object):
+    start: Date
+    end: Date
+    available: bool
+    note: String
     def __init__(
         self, start: Date, end: Date, available: bool, note: String
     ) -> None: ...
