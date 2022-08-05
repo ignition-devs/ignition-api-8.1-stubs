@@ -1,3 +1,13 @@
+## v8.1.19b4 (2022-08-05)
+
+### Feat
+
+- **ia**: add fields to SprocCall, SprocArg, and SProcArgKey (#24)
+
+### Fix
+
+- **system**: accept instances of Dataset (#23)
+
 ## v8.1.19b3 (2022-08-02)
 
 ### Fix
