@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Optional, Type, Union
 
-from com.inductiveautomation.ignition.common import BasicDataset
+from com.inductiveautomation.ignition.common import BasicDataset, Dataset
 from com.inductiveautomation.ignition.common.script.builtin import DatasetUtilities
 from java.lang import String
 from java.util import Date, Locale
@@ -63,7 +63,7 @@ def toExcel(
     nullsEmpty: bool = ...,
     sheetNames: Optional[List[String]] = ...,
 ) -> Any: ...
-def toPyDataSet(dataset: BasicDataset) -> PyDataSet: ...
+def toPyDataSet(dataset: Dataset) -> PyDataSet: ...
 def updateRow(
     dataset: BasicDataset, rowIndex: int, changes: Dict[String, Any]
 ) -> BasicDataset: ...
