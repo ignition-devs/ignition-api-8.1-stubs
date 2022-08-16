@@ -1,0 +1,11 @@
+[flake8]
+ignore =
+    # PEP8
+    E, F,
+    # TypeVar, TypeAlias
+    Y001, Y026,
+    # Python2-style type hints
+    Y022, Y027, Y037,
+    # Other
+    Y032, Y034, Y041
+max-line-length = 88
