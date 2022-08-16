@@ -1,13 +1,16 @@
 from typing import Any, List, Optional, Set, TypeVar
 
 from java.io import Closeable, InputStream, OutputStream
-from java.lang import Class, Object, String
+from java.lang import Class, Enum, Object, String
 from java.nio.channels import SocketChannel as SocketChannel
 
 T = TypeVar("T")
 
 class SocketAddress(Object):
     def __init__(self) -> None: ...
+
+class FileNameMap:
+    def getContentTypeFor(self, fileName: String) -> String: ...
 
 class SocketImplFactory:
     def createSocketImpl(self) -> SocketImpl: ...
@@ -52,6 +55,19 @@ class InetSocketAddress(SocketAddress):
     def getHostString(self) -> String: ...
     def getPort(self) -> int: ...
     def isUnresolved(self) -> bool: ...
+
+class Proxy(Object):
+    NO_PROXY: Proxy
+    def __init__(self, type_: Proxy.Type, sa: SocketAddress) -> None: ...
+    def address(self) -> SocketAddress: ...
+    def type(self) -> Proxy.Type: ...
+
+    class Type(Enum):
+        DIRECT: Proxy.Type
+        HTTP: Proxy.Type
+        SOCKS: Proxy.Type
+        @staticmethod
+        def values() -> List[Proxy.Type]: ...
 
 class Socket(Object, Closeable):
     def __init__(self, *args: Any) -> None: ...
