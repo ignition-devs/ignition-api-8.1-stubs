@@ -1,3 +1,18 @@
+## v8.1.20b0 (2022-08-26)
+
+### Feat
+
+- mirror ignition-api 2022-08-26 (#34)
+- mirror ignition-api changes (#30)
+
+### Fix
+
+- **java**: add return value to getOutputStream (#27)
+
+### Refactor
+
+- **system**: change type for `tags` argument (#28)
+
 ## v8.1.19b4 (2022-08-05)
 
 ### Feat
@@ -42,13 +57,13 @@
 
 ## v8.1.18a3 (2022-07-05)
 
-### Fix
-
-- **ci**: remove Python 3.11
-
 ### Feat
 
 - **ia**: implement all LoggerEx functions (#6)
+
+### Fix
+
+- **ci**: remove Python 3.11
 
 ## v8.1.18a2 (2022-06-29)
 
