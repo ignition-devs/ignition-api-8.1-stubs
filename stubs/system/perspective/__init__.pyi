@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
 from com.inductiveautomation.ignition.common.script.adapters import PyJsonObjectAdapter
 from java.lang import String
@@ -73,7 +73,7 @@ def openPopup(
     view: String,
     params: Optional[Dict[String, Any]] = ...,
     title: String = ...,
-    position: Optional[Dict[String, int]] = ...,
+    position: Optional[Dict[String, Union[int, String]]] = ...,
     showCloseIcon: bool = ...,
     draggable: bool = ...,
     resizable: bool = ...,
@@ -113,7 +113,7 @@ def togglePopup(
     view: String,
     params: Optional[Dict[String, Any]],
     title: String = ...,
-    position: Optional[Dict[String, int]] = ...,
+    position: Optional[Dict[String, Union[int, String]]] = ...,
     showCloseIcon: bool = ...,
     draggable: bool = ...,
     resizable: bool = ...,
