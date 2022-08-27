@@ -1,3 +1,9 @@
+## v8.1.20b1 (2022-08-26)
+
+### Fix
+
+- **system**: accept String arguments for popup position (#35)
+
 ## v8.1.20b0 (2022-08-26)
 
 ### Feat
