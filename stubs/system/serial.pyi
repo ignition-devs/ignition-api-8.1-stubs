@@ -3,8 +3,6 @@ from typing import Any, List, Optional
 from com.inductiveautomation.ignition.modules.serial.scripting import SerialScriptModule
 from java.lang import String
 
-PortManager = SerialScriptModule.PortManager
-SerialConfigurator = SerialScriptModule.SerialConfigurator
 BIT_RATE_110: int
 BIT_RATE_150: int
 BIT_RATE_300: int
@@ -51,7 +49,7 @@ def configureSerialPort(
     hardwareFlowControl: Optional[bool] = ...,
     parity: Optional[int] = ...,
     stopBits: Optional[int] = ...,
-) -> SerialConfigurator: ...
+) -> SerialScriptModule.SerialConfigurator: ...
 def openSerialPort(port: String) -> None: ...
 def port(
     port: String,
@@ -61,7 +59,7 @@ def port(
     hardwareFlowControl: Optional[bool] = ...,
     parity: Optional[int] = ...,
     stopBits: Optional[int] = ...,
-) -> PortManager: ...
+) -> SerialScriptModule.PortManager: ...
 def readBytes(
     port: String, numberOfBytes: int, timeout: Optional[int] = ...
 ) -> List[Any]: ...

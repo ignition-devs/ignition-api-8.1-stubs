@@ -12,6 +12,10 @@ from com.inductiveautomation.ignition.common.sqltags.history.annotations import 
 from java.lang import String
 from java.util import Date
 
+DEFAULT_TIMEOUT_MILLIS: int
+LEGACY_DEFAULT_TIMEOUT_MILLIS: int
+TAG_PATH: Any
+
 def browse(path: String, filter: Optional[Dict[String, Any]] = ...) -> Results: ...
 def browseHistoricalTags(
     path: String,

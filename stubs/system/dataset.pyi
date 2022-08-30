@@ -6,7 +6,6 @@ from java.lang import String
 from java.util import Date, Locale
 
 ColType = Union[Date, float, int, str, unicode]
-PyDataSet = DatasetUtilities.PyDataSet
 
 def addColumn(
     dataset: BasicDataset,
@@ -63,7 +62,7 @@ def toExcel(
     nullsEmpty: bool = ...,
     sheetNames: Optional[List[String]] = ...,
 ) -> Any: ...
-def toPyDataSet(dataset: Dataset) -> PyDataSet: ...
+def toPyDataSet(dataset: Dataset) -> DatasetUtilities.PyDataSet: ...
 def updateRow(
     dataset: BasicDataset, rowIndex: int, changes: Dict[String, Any]
 ) -> BasicDataset: ...
