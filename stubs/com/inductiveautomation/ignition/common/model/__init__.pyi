@@ -3,6 +3,29 @@ from typing import Any, Optional, Tuple, Union
 from java.io import InputStream
 from java.lang import Object, String
 
+class ApplicationScope(Object):
+    ALL: int
+    CLIENT: int
+    DESIGNER: int
+    GATEWAY: int
+    NONE: int
+    @staticmethod
+    def getGlobalScope() -> int: ...
+    @staticmethod
+    def getScopePrefix() -> String: ...
+    @staticmethod
+    def init(globalScope: int) -> None: ...
+    @staticmethod
+    def isClient(scope: int) -> bool: ...
+    @staticmethod
+    def isDesigner(scope: int) -> bool: ...
+    @staticmethod
+    def isGateway(scope: int) -> bool: ...
+    @staticmethod
+    def parseScope(s: String) -> int: ...
+    @staticmethod
+    def toCode(scope: int) -> String: ...
+
 class Version(Object):
     build: int
     dev: bool
