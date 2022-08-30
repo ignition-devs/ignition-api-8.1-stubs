@@ -9,7 +9,7 @@
 
 This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`ignition-api/8.1`](https://github.com/ignition-api/8.1). These files were generated using `mypy`'s [`stubgen`](https://mypy.readthedocs.io/en/stable/stubgen.html).
 
-Please note that this work is currently in its Alpha stage, so don't hesitate to report any issues.
+Please note that this work is currently in its Beta stage, so don't hesitate to report any issues.
 
 ## Installation and usage
 

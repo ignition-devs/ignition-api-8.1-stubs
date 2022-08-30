@@ -9,14 +9,12 @@ from com.inductiveautomation.ignition.common.script.builtin import AbstractOPCUt
 from com.inductiveautomation.ignition.common.script.builtin.ialabs import OPCBrowseTag
 from java.lang import String
 
-PyOPCTag = AbstractOPCUtilities.PyOPCTag
+BrowseServerResult = List[Union[BasicOPCBrowseElement, AbstractOPCUtilities.PyOPCTag]]
 
 def browse(
     opcServer: String, device: String, folderPath: String, opcItemPath: String
 ) -> List[OPCBrowseTag]: ...
-def browseServer(
-    opcServer: String, nodeId: String
-) -> List[Union[BasicOPCBrowseElement, PyOPCTag]]: ...
+def browseServer(opcServer: String, nodeId: String) -> BrowseServerResult: ...
 def browseSimple(
     opcServer: String, device: String, folderPath: String, opcItemPath: String
 ) -> List[OPCBrowseTag]: ...
