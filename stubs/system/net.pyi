@@ -43,8 +43,8 @@ def httpPost(url: String, *args: Any, **kwargs: Any) -> String: ...
 def httpPut(url: String, *args: Any, **kwargs: Any) -> String: ...
 def openURL(url: String, useApplet: Optional[bool] = ...) -> None: ...
 def sendEmail(
-    smtp: String,
-    fromAddr: String,
+    smtp: Optional[String] = ...,
+    fromAddr: String = ...,
     subject: Optional[String] = ...,
     body: Optional[String] = ...,
     html: bool = ...,
