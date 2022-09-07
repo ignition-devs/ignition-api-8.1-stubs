@@ -4,6 +4,11 @@ from java.lang import Object
 
 R = TypeVar("R")
 T = TypeVar("T")
+U = TypeVar("U")
+
+class BiPredicate:
+    def negate(self) -> BiPredicate: ...
+    def test(self, t: T, u: U) -> bool: ...
 
 class Consumer:
     def accept(self, t: T) -> None: ...
