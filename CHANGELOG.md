@@ -1,3 +1,20 @@
+## v8.1.20b3 (2022-09-13)
+
+### Feat
+
+- **java**: add java.nio Files and Paths (#44)
+- **java**: add type hints to all java[x] classes and methods (#40)
+
+### Fix
+
+- **system**: set smtp keyword argument as optional (#43)
+
+## v8.1.20b2 (2022-08-30)
+
+### Feat
+
+- **ia**: add ApplicationScope class (#39)
+
 ## v8.1.20b1 (2022-08-26)
 
 ### Fix
