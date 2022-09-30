@@ -1,3 +1,10 @@
+## v8.1.21 (2022-09-30)
+
+### Feat
+
+- **system**: add roster functions from 8.1.21 (#52)
+- **system**: add util.getModules (#51)
+
 ## v8.1.20 (2022-09-22)
 
 ## v8.1.20b4 (2022-09-21)
