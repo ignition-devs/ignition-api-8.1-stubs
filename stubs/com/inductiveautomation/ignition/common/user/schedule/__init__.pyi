@@ -1,7 +1,8 @@
-from java.lang import Object, String
+from com.palantir.ptoss.cinch.core import DefaultBindableModel
+from java.lang import String
 from java.util import Date
 
-class AbstractScheduleModel(Object):
+class AbstractScheduleModel(DefaultBindableModel):
     def getScheduleForDay(self, cal) -> None: ...
     def getType(self) -> None: ...
     def isObserveHolidays(self) -> None: ...
@@ -59,7 +60,7 @@ class BasicScheduleModel(AbstractScheduleModel):
 class CompositeScheduleModel(AbstractScheduleModel):
     def getModels(self) -> None: ...
 
-class HolidayModel(Object):
+class HolidayModel(DefaultBindableModel):
     date: Date
     name: String
     repeatAnnually: bool
@@ -72,7 +73,7 @@ class HolidayModel(Object):
     def setName(self, name: String) -> None: ...
     def setRepeatAnnually(self, repeatAnnually: bool) -> None: ...
 
-class ScheduleAdjustment(Object):
+class ScheduleAdjustment(DefaultBindableModel):
     start: Date
     end: Date
     available: bool
