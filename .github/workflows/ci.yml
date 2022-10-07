@@ -24,4 +24,4 @@ jobs:
         python -m tox r -vv --notest
     - name: Run tests
       run: |
-        python -m tox r --vv
+        python -m tox r -vv
