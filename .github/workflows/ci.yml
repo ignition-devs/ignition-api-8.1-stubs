@@ -21,7 +21,7 @@ jobs:
         python -m pip install tox-gh
     - name: Setup test suite
       run: |
-        tox r -vv --notest
+        tox4 r -vv --notest
     - name: Run tests
       run: |
-        tox r --vv
+        tox4 r --vv
