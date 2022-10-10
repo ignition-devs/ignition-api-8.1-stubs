@@ -1,6 +1,10 @@
 name: ci
 
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -21,7 +25,7 @@ jobs:
         python -m pip install tox-gh
     - name: Setup test suite
       run: |
-        python -m tox r -vv --notest
+        tox -vv --notest
     - name: Run tests
       run: |
-        python -m tox r -vv
+        tox
