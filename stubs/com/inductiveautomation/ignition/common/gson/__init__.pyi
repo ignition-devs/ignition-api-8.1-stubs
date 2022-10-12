@@ -1,11 +1,9 @@
 from typing import Any, Iterable, Optional, TypeVar, Union
 
-from com.inductiveautomation.ignition.common.gson.reflect import TypeToken as TypeToken
-from com.inductiveautomation.ignition.common.gson.stream import JsonReader as JsonReader
-from com.inductiveautomation.ignition.common.gson.stream import JsonWriter as JsonWriter
+from com.inductiveautomation.ignition.common.gson.reflect import TypeToken
+from com.inductiveautomation.ignition.common.gson.stream import JsonReader, JsonWriter
 from java.io import Reader, Writer
-from java.lang import Class, Enum, Object
-from java.lang import String as String
+from java.lang import Class, Enum, Object, String
 
 T = TypeVar("T")
 

@@ -1,8 +1,7 @@
 from typing import Any, List
 
-from com.inductiveautomation.ignition.common.tags.model import TagPath as TagPath
-from java.lang import Object
-from java.lang import String as String
+from com.inductiveautomation.ignition.common.tags.model import TagPath
+from java.lang import Object, String
 
 class TagPathParser(Object):
     PARENT_RELATIVE: String
