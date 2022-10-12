@@ -1,8 +1,7 @@
 from typing import Any, List, Optional, Set, TypeVar, Union
 
 from com.inductiveautomation.ignition.common.document import DocumentElement
-from com.inductiveautomation.ignition.common.gson import Gson
-from com.inductiveautomation.ignition.common.gson import JsonElement as JsonElement
+from com.inductiveautomation.ignition.common.gson import Gson, JsonElement
 from com.inductiveautomation.ignition.common.model.values import (
     QualifiedValue,
     QualityCode,
@@ -97,7 +96,7 @@ class JsonPath(Object):
 
 class Path:
     SERIALIZATION_WHITELIST: Set[Class]
-    def getLastPathComponent(self) -> str: ...
+    def getLastPathComponent(self) -> String: ...
     def getParentPath(self) -> Path: ...
     def getPathComponent(self, i: int) -> String: ...
     def getPathLength(self) -> int: ...
