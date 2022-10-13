@@ -19,10 +19,6 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install tox
     - name: Pick environment to run
       run: |
         import codecs; import os; import sys
@@ -31,9 +27,13 @@ jobs:
         with codecs.open(os.environ["GITHUB_ENV"], "a", "utf-8") as file_handler:
               file_handler.write(env)
       shell: python
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install tox
     - name: Setup test suite
       run: |
         tox -vv --notest
     - name: Run tests
       run: |
-        tox
+        tox -vv
