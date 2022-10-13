@@ -36,4 +36,4 @@ jobs:
         tox -vv --notest
     - name: Run tests
       run: |
-        tox
+        tox -vv
