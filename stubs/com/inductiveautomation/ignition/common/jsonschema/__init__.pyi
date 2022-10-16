@@ -1,8 +1,7 @@
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-from com.inductiveautomation.ignition.common import JsonPath as JsonPath
-from com.inductiveautomation.ignition.common.gson import JsonArray as JsonArray
-from com.inductiveautomation.ignition.common.gson import JsonElement as JsonElement
+from com.inductiveautomation.ignition.common import JsonPath
+from com.inductiveautomation.ignition.common.gson import JsonArray, JsonElement
 from java.io import InputStream
 from java.lang import Enum, Object
 from java.lang import String as String

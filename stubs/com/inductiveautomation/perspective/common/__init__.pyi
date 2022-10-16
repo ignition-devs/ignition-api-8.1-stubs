@@ -1,9 +1,8 @@
 from typing import Optional
 
-from com.inductiveautomation.ignition.common.gson import Gson as Gson
-from com.inductiveautomation.ignition.common.gson import JsonObject as JsonObject
-from com.inductiveautomation.ignition.common.jsonschema import JsonSchema as JsonSchema
-from com.inductiveautomation.ignition.common.util import LoggerEx as LoggerEx
+from com.inductiveautomation.ignition.common.gson import Gson, JsonObject
+from com.inductiveautomation.ignition.common.jsonschema import JsonSchema
+from com.inductiveautomation.ignition.common.util import LoggerEx
 from java.lang import Object
 from java.lang import String as String
 from java.util.function import Consumer

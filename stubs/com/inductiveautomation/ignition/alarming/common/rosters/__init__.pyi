@@ -1,7 +1,7 @@
 from typing import List
 
-from com.inductiveautomation.ignition.common.user import User as User
-from com.palantir.ptoss.cinch.core import DefaultBindableModel as DefaultBindableModel
+from com.inductiveautomation.ignition.common.user import User
+from com.palantir.ptoss.cinch.core import DefaultBindableModel
 from java.lang import String as String
 
 class RosterModel(DefaultBindableModel):
