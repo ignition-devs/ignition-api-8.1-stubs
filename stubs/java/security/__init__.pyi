@@ -1,4 +1,4 @@
-from java.lang import Object as Object
+from java.lang import Object
 from java.lang import String as String
 from javax.security.auth import Subject
 

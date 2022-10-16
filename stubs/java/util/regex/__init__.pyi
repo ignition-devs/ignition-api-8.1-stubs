@@ -1,12 +1,9 @@
 from typing import Any, List, Optional, Union
 
-from java.lang import CharSequence as CharSequence
-from java.lang import Object as Object
+from java.lang import CharSequence, Object
 from java.lang import String as String
-from java.lang import StringBuffer as StringBuffer
-from java.lang import StringBuilder as StringBuilder
-from java.util.function import Function as Function
-from java.util.function import Predicate as Predicate
+from java.lang import StringBuffer, StringBuilder
+from java.util.function import Function, Predicate
 
 class MatchResult:
     def end(self, group: Optional[int] = ...) -> int: ...

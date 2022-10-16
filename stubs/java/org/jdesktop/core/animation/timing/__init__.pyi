@@ -1,4 +1,4 @@
-from java.lang import Object as Object
+from java.lang import Object
 
 class Animator(Object):
     def cancel(self) -> bool: ...

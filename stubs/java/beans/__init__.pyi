@@ -1,6 +1,6 @@
-from java.lang import Object as Object
+from java.lang import Object
 from java.lang import String as String
-from java.util import EventObject as EventObject
+from java.util import EventObject
 
 class PropertyChangeEvent(EventObject):
     def __init__(

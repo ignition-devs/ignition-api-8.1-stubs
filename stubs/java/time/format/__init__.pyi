@@ -1,6 +1,6 @@
 from typing import List
 
-from java.lang import Enum as Enum
+from java.lang import Enum
 
 class ResolverStyle(Enum):
     LENIENT: ResolverStyle
