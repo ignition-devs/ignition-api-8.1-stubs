@@ -1,5 +1,4 @@
 from java.awt import AWTEvent, Component, Container
-from java.lang import Object as Object
 
 class AncestorEvent(AWTEvent):
     ANCESTOR_ADDED: int
