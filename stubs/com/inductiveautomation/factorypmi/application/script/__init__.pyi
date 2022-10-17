@@ -1,0 +1,6 @@
+from java.lang import String
+from org.python.core import PyObject
+
+class PyComponentWrapper(PyObject):
+    def __init__(self, component) -> None: ...
+    def wrapMethod(self, name: String) -> PyObject: ...
