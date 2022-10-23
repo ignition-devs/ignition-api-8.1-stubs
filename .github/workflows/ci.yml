@@ -33,7 +33,7 @@ jobs:
       shell: python
     - name: Setup test suite
       run: |
-        python -m tox --notest
+        tox --notest
     - name: Run tests
       run: |
-        python -m tox
+        tox
