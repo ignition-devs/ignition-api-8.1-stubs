@@ -10,6 +10,7 @@ from java.org.jdesktop.core.animation.timing import Animator
 from java.util import EventObject
 from javax.swing import JComponent, JFrame, JPopupMenu
 
+Number = Union[float, int]
 ACCL_NONE: int
 ACCL_CONSTANT: int
 ACCL_FAST_TO_SLOW: int
@@ -62,10 +63,8 @@ def passwordBox(
 def setScreenIndex(index: int) -> None: ...
 def setTouchscreenModeEnabled(enabled: bool) -> None: ...
 def showNumericKeypad(
-    initialValue: Union[float, int],
-    fontSize: Optional[int] = ...,
-    usePasswordMode: bool = ...,
-) -> Union[float, int]: ...
+    initialValue: Number, fontSize: Optional[int] = ..., usePasswordMode: bool = ...
+) -> Number: ...
 def showTouchscreenKeyboard(
     initialText: String,
     fontSize: Optional[int] = ...,
