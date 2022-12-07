@@ -2,6 +2,7 @@ from typing import List, Optional, Union
 
 from java.lang import String
 
+Number = Union[float, int]
 NUL: int
 PULSE_ON: int
 PULSE_OFF: int
@@ -11,10 +12,7 @@ CLOSE: int
 TRIP: int
 
 def directOperateAnalog(
-    deviceName: String,
-    index: int,
-    value: Union[float, int],
-    variation: Optional[int] = ...,
+    deviceName: String, index: int, value: Number, variation: Optional[int] = ...
 ) -> int: ...
 def directOperateBinary(
     deviceName: String,
@@ -34,10 +32,7 @@ def freezeCountersAtTime(
     deviceName: String, absoluteTime: int, intervalTime: int, indexes: List[int]
 ) -> None: ...
 def selectOperateAnalog(
-    deviceName: String,
-    index: int,
-    value: Union[float, int],
-    variation: Optional[int] = ...,
+    deviceName: String, index: int, value: Number, variation: Optional[int] = ...
 ) -> int: ...
 def selectOperateBinary(
     deviceName: String,
