@@ -5,7 +5,7 @@ on:
     types: [published]
 
 env:
-  PYTHON_VERSION: '3.11'
+  PYTHON_VERSION: '3.10'
 
 jobs:
   upload:
