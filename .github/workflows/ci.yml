@@ -9,10 +9,13 @@ on:
 jobs:
   test:
     name: test ${{ matrix.python-version }}
+
     runs-on: ubuntu-20.04
+
     strategy:
       matrix:
         python-version: ["3.6", "3.7", "3.8", "3.9", "3.10"]
+
     steps:
       - uses: actions/checkout@v3
 
@@ -49,7 +52,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: .tox
-          key: ${{ runner.os }}-tox-${{ hashFiles('tox.ini') }}
+          key: ${{ runner.os }}-tox-${{ hashFiles('tox.ini', 'requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-tox-
 
