@@ -2,7 +2,8 @@ name: PyPI Upload
 
 on:
   release:
-    types: [published]
+    types:
+      - published
 
 env:
   PYTHON_VERSION: "3.10"
@@ -12,20 +13,14 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
       - name: Set up Python ${{ env.PYTHON_VERSION }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-
-      - name: Cache pip
-        id: cache-pip
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip
-          restore-keys: |
-            ${{ runner.os }}-pip
+          cache: "pip"
 
       - name: Install dependencies
         run: |
