@@ -1,5 +1,56 @@
 [build-system]
 build-backend = "setuptools.build_meta"
 requires = [
-  "setuptools>=59",
+  "setuptools>=61.2",
 ]
+
+[project]
+name = "ignition_api_stubs"
+version = "8.1.24"
+description = "Ignition Scripting API Stubs"
+readme = "README.md"
+keywords = [
+  "hmi",
+  "ignition",
+  "inductive automation",
+  "scada",
+]
+license = {file = "LICENSE"}
+authors = [{name = "César Román", email = "cesar@thecesrom.dev"}]
+requires-python = "<3.11, >=3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Typing :: Stubs Only",
+    "Typing :: Typed",
+]
+dependencies = [
+  "mypy[python2]==0.971",
+  "types-enum34",
+]
+[project.urls]
+Funding = "https://github.com/sponsors/thecesrom"
+Homepage = "https://ignition-api.github.io/stubs"
+Source = "https://github.com/ignition-api/stubs"
+Tracker = "https://github.com/ignition-api/stubs/issues"
+
+
+[tool.setuptools]
+include-package-data = true
+package-dir = {"" = "stubs"}
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi", "py.typed"]

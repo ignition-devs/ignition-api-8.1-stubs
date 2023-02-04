@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: ["3.6", "3.7", "3.8", "3.9", "3.10"]
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
 
     steps:
       - name: Checkout repo
@@ -25,15 +25,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-
-      - name: Cache Python
-        id: cache-python
-        uses: actions/cache@v3
-        with:
-          path: ${{ env.pythonLocation }}
-          key: py${{ matrix.python-version }}-${{ hashFiles('tox.ini', 'requirements/ci.txt')  }}
-          restore-keys: |
-            py${{ matrix.python-version }}-
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -55,8 +47,6 @@ jobs:
         with:
           path: .tox
           key: ${{ runner.os }}-tox-${{ hashFiles('tox.ini', 'requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-tox-
 
       - name: Run tox
         run: |
