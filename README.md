@@ -11,10 +11,10 @@ This package contains a collection of [stubs](https://www.python.org/dev/peps/pe
 
 ## Installation and usage
 
-To use ignition-api-stubs, you may install it with `pip`. It requires Python 3.6+.
+To use ignition-api-stubs, you may install it with `pip`. It requires Python 3.7, 3.8, 3.9 or 3.10.
 
 ```sh
-python -m pip install ignition-api-stubs
+python3 -m pip install ignition-api-stubs
 ```
 
 To run `mypy` against your code, execute the following command passing the source directory (typycally `src`) or a single file:
