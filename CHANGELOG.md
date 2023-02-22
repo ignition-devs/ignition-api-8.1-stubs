@@ -1,3 +1,14 @@
+## v8.1.25.post1 (2023-02-21)
+
+## v8.1.24.post1 (2023-02-21)
+
+### Feat
+
+- **java**: add GridLayout and JPasswordField (#99)
+- **java**: add util.Arrays static class (#98)
+
+## v8.1.25 (2023-02-15)
+
 ## v8.1.24.post1 (2023-02-21)
 
 ### Feat
