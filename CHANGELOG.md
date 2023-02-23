@@ -1,3 +1,22 @@
+## v8.1.24.post2 (2023-02-23)
+
+### Feat
+
+- **javax**: add JPasswordField getText (#100)
+
+### Refactor
+
+- **java**: create the String class (#101)
+
+## v8.1.25.post1 (2023-02-21)
+
+## v8.1.24.post1 (2023-02-21)
+
+### Feat
+
+- **java**: add GridLayout and JPasswordField (#99)
+- **java**: add util.Arrays static class (#98)
+
 ## v8.1.25.post1 (2023-02-21)
 
 ## v8.1.24.post1 (2023-02-21)
