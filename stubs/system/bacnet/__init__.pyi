@@ -1,19 +1,19 @@
 from typing import Any, List, Optional
 
-from java.lang import String
+from dev.thecesrom.helper.types import AnyStr
 from system.bacnet.enumerated import ObjectType, PropertyIdentifier
 
 def readRaw(
-    deviceName: String,
+    deviceName: AnyStr,
     objectType: ObjectType,
     objectId: int,
     propertyId: PropertyIdentifier,
     propertyArrayIndex: Optional[int] = ...,
 ) -> List[Any]: ...
-def synchronizeTime(deviceName: String) -> None: ...
-def synchronizeTimeUtc(deviceName: String) -> None: ...
+def synchronizeTime(deviceName: AnyStr) -> None: ...
+def synchronizeTimeUtc(deviceName: AnyStr) -> None: ...
 def writeRaw(
-    deviceName: String,
+    deviceName: AnyStr,
     objectType: ObjectType,
     objectId: int,
     propertyId: PropertyIdentifier,
@@ -22,7 +22,7 @@ def writeRaw(
     propertyArrayIndex: int,
 ) -> None: ...
 def writeWithPriority(
-    deviceName: String, objectType: int, objectId: int, value: Any, priority: int
+    deviceName: AnyStr, objectType: int, objectId: int, value: Any, priority: int
 ) -> None: ...
 
 # Names in __all__ with no definition:

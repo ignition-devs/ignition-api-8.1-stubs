@@ -3,14 +3,14 @@ from typing import Optional
 from com.inductiveautomation.ignition.common.gson import Gson, JsonObject
 from com.inductiveautomation.ignition.common.jsonschema import JsonSchema
 from com.inductiveautomation.ignition.common.util import LoggerEx
+from dev.thecesrom.helper.types import AnyStr as AnyStr
 from java.lang import Object
-from java.lang import String as String
 from java.util.function import Consumer
 
 class PerspectiveModule(Object):
-    LOG_PREFIX: String
+    LOG_PREFIX: AnyStr
     META_SCHEMA: JsonSchema
-    MODULE_ID: String
+    MODULE_ID: AnyStr
     SESSION_PROPS_SCHEMA: JsonSchema
     VIEW_SCHEMA: JsonSchema
     @staticmethod
@@ -24,4 +24,4 @@ class PerspectiveModule(Object):
     @staticmethod
     def defaultViewProps() -> JsonObject: ...
     @staticmethod
-    def getLogger(name: String) -> LoggerEx: ...
+    def getLogger(name: AnyStr) -> LoggerEx: ...

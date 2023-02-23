@@ -1,63 +1,63 @@
 from typing import Any, Callable, Dict, List, Optional
 
 from com.inductiveautomation.ignition.common.script.builtin.http import JythonHttpClient
-from java.lang import String
+from dev.thecesrom.helper.types import AnyStr
 
-def getExternalIpAddress() -> String: ...
-def getHostName() -> String: ...
-def getIpAddress() -> String: ...
-def getRemoteServers(runningOnly: Optional[bool] = ...) -> List[String]: ...
+def getExternalIpAddress() -> AnyStr: ...
+def getHostName() -> AnyStr: ...
+def getIpAddress() -> AnyStr: ...
+def getRemoteServers(runningOnly: Optional[bool] = ...) -> List[AnyStr]: ...
 def httpClient(
     timeout: int = ...,
     bypass_cert_validation: bool = ...,
-    username: Optional[String] = ...,
-    password: Optional[String] = ...,
-    proxy: Optional[String] = ...,
-    cookie_policy: String = ...,
-    redirect_policy: String = ...,
-    version: String = ...,
+    username: Optional[AnyStr] = ...,
+    password: Optional[AnyStr] = ...,
+    proxy: Optional[AnyStr] = ...,
+    cookie_policy: AnyStr = ...,
+    redirect_policy: AnyStr = ...,
+    version: AnyStr = ...,
     customizer: Optional[Callable[..., Any]] = ...,
 ) -> JythonHttpClient: ...
 def httpDelete(
-    url: String,
-    contentType: Optional[String] = ...,
+    url: AnyStr,
+    contentType: Optional[AnyStr] = ...,
     connectTimeout: int = ...,
     readTimeout: int = ...,
-    username: Optional[String] = ...,
-    password: Optional[String] = ...,
-    headerValues: Optional[Dict[String, String]] = ...,
+    username: Optional[AnyStr] = ...,
+    password: Optional[AnyStr] = ...,
+    headerValues: Optional[Dict[AnyStr, AnyStr]] = ...,
     bypassCertValidation: bool = ...,
-) -> String: ...
+) -> AnyStr: ...
 def httpGet(
-    url: String,
+    url: AnyStr,
     connectTimeout: int = ...,
     readTimeout: int = ...,
-    username: Optional[String] = ...,
-    password: Optional[String] = ...,
-    headerValues: Optional[Dict[String, String]] = ...,
+    username: Optional[AnyStr] = ...,
+    password: Optional[AnyStr] = ...,
+    headerValues: Optional[Dict[AnyStr, AnyStr]] = ...,
     bypassCertValidation: Optional[bool] = ...,
     useCaches: bool = ...,
     throwOnError: bool = ...,
-) -> String: ...
-def httpPost(url: String, *args: Any, **kwargs: Any) -> String: ...
-def httpPut(url: String, *args: Any, **kwargs: Any) -> String: ...
-def openURL(url: String, useApplet: Optional[bool] = ...) -> None: ...
+) -> AnyStr: ...
+def httpPost(url: AnyStr, *args: Any, **kwargs: Any) -> AnyStr: ...
+def httpPut(url: AnyStr, *args: Any, **kwargs: Any) -> AnyStr: ...
+def openURL(url: AnyStr, useApplet: Optional[bool] = ...) -> None: ...
 def sendEmail(
-    smtp: Optional[String] = ...,
-    fromAddr: String = ...,
-    subject: Optional[String] = ...,
-    body: Optional[String] = ...,
+    smtp: Optional[AnyStr] = ...,
+    fromAddr: AnyStr = ...,
+    subject: Optional[AnyStr] = ...,
+    body: Optional[AnyStr] = ...,
     html: bool = ...,
-    to: Optional[List[String]] = ...,
+    to: Optional[List[AnyStr]] = ...,
     attachmentNames: Optional[List[object]] = ...,
     attachmentData: Optional[List[object]] = ...,
     timeout: int = ...,
-    username: Optional[String] = ...,
-    password: Optional[String] = ...,
-    priority: String = ...,
-    smtpProfile: Optional[String] = ...,
-    cc: Optional[List[String]] = ...,
-    bcc: Optional[List[String]] = ...,
+    username: Optional[AnyStr] = ...,
+    password: Optional[AnyStr] = ...,
+    priority: AnyStr = ...,
+    smtpProfile: Optional[AnyStr] = ...,
+    cc: Optional[List[AnyStr]] = ...,
+    bcc: Optional[List[AnyStr]] = ...,
     retries: int = ...,
-    replyTo: Optional[List[String]] = ...,
+    replyTo: Optional[List[AnyStr]] = ...,
 ) -> None: ...

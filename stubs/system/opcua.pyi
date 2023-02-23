@@ -1,17 +1,17 @@
 from typing import Any, Dict, List, Tuple
 
-from java.lang import String
+from dev.thecesrom.helper.types import AnyStr
 
 def addConnection(
-    name: String,
-    description: String,
-    discoveryUrl: String,
-    endpointUrl: String,
-    securityPolicy: String,
-    securityMode: String,
-    settings: Dict[String, Any],
+    name: AnyStr,
+    description: AnyStr,
+    discoveryUrl: AnyStr,
+    endpointUrl: AnyStr,
+    securityPolicy: AnyStr,
+    securityMode: AnyStr,
+    settings: Dict[AnyStr, Any],
 ) -> None: ...
 def callMethod(
-    connectionName: String, objectId: String, methodId: String, inputs: List[String]
+    connectionName: AnyStr, objectId: AnyStr, methodId: AnyStr, inputs: List[AnyStr]
 ) -> Tuple[Any, Any, Any]: ...
-def removeConnection(name: String) -> bool: ...
+def removeConnection(name: AnyStr) -> bool: ...

@@ -1,6 +1,6 @@
 from typing import List, Optional, Union
 
-from java.lang import String
+from dev.thecesrom.helper.types import AnyStr
 
 Number = Union[float, int]
 NUL: int
@@ -12,10 +12,10 @@ CLOSE: int
 TRIP: int
 
 def directOperateAnalog(
-    deviceName: String, index: int, value: Number, variation: Optional[int] = ...
+    deviceName: AnyStr, index: int, value: Number, variation: Optional[int] = ...
 ) -> int: ...
 def directOperateBinary(
-    deviceName: String,
+    deviceName: AnyStr,
     indexes: List[int],
     opType: int,
     tcCode: Optional[int] = ...,
@@ -23,19 +23,19 @@ def directOperateBinary(
     onTime: Optional[int] = ...,
     offTime: Optional[int] = ...,
 ) -> int: ...
-def freezeAnalogs(deviceName: String, indexes: List[int]) -> None: ...
+def freezeAnalogs(deviceName: AnyStr, indexes: List[int]) -> None: ...
 def freezeAnalogsAtTime(
-    deviceName: String, absoluteTime: int, intervalTime: int, indexes: List[int]
+    deviceName: AnyStr, absoluteTime: int, intervalTime: int, indexes: List[int]
 ) -> None: ...
-def freezeCounters(deviceName: String, indexes: List[int]) -> None: ...
+def freezeCounters(deviceName: AnyStr, indexes: List[int]) -> None: ...
 def freezeCountersAtTime(
-    deviceName: String, absoluteTime: int, intervalTime: int, indexes: List[int]
+    deviceName: AnyStr, absoluteTime: int, intervalTime: int, indexes: List[int]
 ) -> None: ...
 def selectOperateAnalog(
-    deviceName: String, index: int, value: Number, variation: Optional[int] = ...
+    deviceName: AnyStr, index: int, value: Number, variation: Optional[int] = ...
 ) -> int: ...
 def selectOperateBinary(
-    deviceName: String,
+    deviceName: AnyStr,
     indexes: List[int],
     opType: int,
     tcCode: Optional[int] = ...,
