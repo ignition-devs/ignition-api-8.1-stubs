@@ -1,22 +1,22 @@
 from typing import Any, Dict, List, Optional
 
 from com.inductiveautomation.ignition.common import BasicDataset
-from java.lang import String
+from dev.thecesrom.helper.types import AnyStr
 
 def executeAndDistribute(
-    path: String,
-    project: String = ...,
-    parameters: Optional[Dict[String, int]] = ...,
-    action: Optional[String] = ...,
-    actionSettings: Optional[Dict[String, Any]] = ...,
+    path: AnyStr,
+    project: AnyStr = ...,
+    parameters: Optional[Dict[AnyStr, int]] = ...,
+    action: Optional[AnyStr] = ...,
+    actionSettings: Optional[Dict[AnyStr, Any]] = ...,
 ) -> None: ...
 def executeReport(
-    path: String,
-    project: String = ...,
-    parameters: Optional[Dict[String, int]] = ...,
-    fileType: String = ...,
+    path: AnyStr,
+    project: AnyStr = ...,
+    parameters: Optional[Dict[AnyStr, int]] = ...,
+    fileType: AnyStr = ...,
 ) -> Any: ...
 def getReportNamesAsDataset(
-    project: Optional[String] = ..., includeReportName: Optional[bool] = ...
+    project: Optional[AnyStr] = ..., includeReportName: Optional[bool] = ...
 ) -> BasicDataset: ...
-def getReportNamesAsList(project: Optional[String] = ...) -> List[String]: ...
+def getReportNamesAsList(project: Optional[AnyStr] = ...) -> List[AnyStr]: ...

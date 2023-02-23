@@ -1,16 +1,17 @@
 from typing import Any, List
 
 from com.inductiveautomation.ignition.common.tags.model import TagPath
-from java.lang import Object, String
+from dev.thecesrom.helper.types import AnyStr
+from java.lang import Object
 
 class TagPathParser(Object):
-    PARENT_RELATIVE: String
-    PATH_SEPARATOR: String
-    PROPERTY_SEPARATOR: String
-    RELATIVE_DIR_UP: String
-    ROOT_RELATIVE: String
+    PARENT_RELATIVE: AnyStr
+    PATH_SEPARATOR: AnyStr
+    PROPERTY_SEPARATOR: AnyStr
+    RELATIVE_DIR_UP: AnyStr
+    ROOT_RELATIVE: AnyStr
     @staticmethod
-    def chopPath(string: String) -> List[String]: ...
+    def chopPath(string: AnyStr) -> List[AnyStr]: ...
     @staticmethod
     def derelativize(tagPath: TagPath, relativeRoot: TagPath) -> TagPath: ...
     @staticmethod

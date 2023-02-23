@@ -1,126 +1,126 @@
 from typing import Any, Dict, List, Optional, Union
 
 from com.inductiveautomation.ignition.common.script.adapters import PyJsonObjectAdapter
-from java.lang import String
+from dev.thecesrom.helper.types import AnyStr
 
 def alterDock(
-    dockId: String,
-    config: Optional[Dict[String, Any]] = ...,
-    sessionId: String = ...,
-    pageId: String = ...,
+    dockId: AnyStr,
+    config: Optional[Dict[AnyStr, Any]] = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
 ) -> None: ...
 def alterLogging(
     remoteLoggingEnabled: bool = ...,
-    level: String = ...,
-    remoteLoggingLevel: String = ...,
-    sessionId: String = ...,
-    pageId: String = ...,
+    level: AnyStr = ...,
+    remoteLoggingLevel: AnyStr = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
 ) -> None: ...
 def authenticationChallenge(
-    sessionId: String = ...,
-    pageId: String = ...,
-    idp: String = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
+    idp: AnyStr = ...,
     forceAuth: bool = ...,
     timeout: int = ...,
-    payload: Optional[Dict[String, Any]] = ...,
-    framing: String = ...,
+    payload: Optional[Dict[AnyStr, Any]] = ...,
+    framing: AnyStr = ...,
 ) -> None: ...
-def closeDock(id: String, sessionId: String = ..., pageId: String = ...) -> None: ...
+def closeDock(id: AnyStr, sessionId: AnyStr = ..., pageId: AnyStr = ...) -> None: ...
 def closePage(
-    message: Optional[String] = ..., sessionId: String = ..., pageId: String = ...
+    message: Optional[AnyStr] = ..., sessionId: AnyStr = ..., pageId: AnyStr = ...
 ) -> None: ...
-def closePopup(id: String, sessionId: String = ..., pageId: String = ...) -> None: ...
-def closeSession(message: Optional[String] = ..., sessionId: String = ...) -> None: ...
+def closePopup(id: AnyStr, sessionId: AnyStr = ..., pageId: AnyStr = ...) -> None: ...
+def closeSession(message: Optional[AnyStr] = ..., sessionId: AnyStr = ...) -> None: ...
 def download(
-    filename: String,
+    filename: AnyStr,
     data: Any,
-    contentType: Optional[String] = ...,
-    sessionId: String = ...,
-    pageId: String = ...,
+    contentType: Optional[AnyStr] = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
 ) -> None: ...
-def getProjectInfo() -> Dict[String, Any]: ...
+def getProjectInfo() -> Dict[AnyStr, Any]: ...
 def getSessionInfo(
-    usernameFilter: Optional[String] = ..., projectFilter: Optional[String] = ...
+    usernameFilter: Optional[AnyStr] = ..., projectFilter: Optional[AnyStr] = ...
 ) -> List[PyJsonObjectAdapter]: ...
 def isAuthorized(
-    isAllOf: bool, securityLevels: List[String], sessionId: String = ...
+    isAllOf: bool, securityLevels: List[AnyStr], sessionId: AnyStr = ...
 ) -> bool: ...
 def login(
-    sessionId: String = ..., pageId: String = ..., forceAuth: bool = ...
+    sessionId: AnyStr = ..., pageId: AnyStr = ..., forceAuth: bool = ...
 ) -> None: ...
 def logout(
-    sessionId: String = ..., pageId: String = ..., message: String = ...
+    sessionId: AnyStr = ..., pageId: AnyStr = ..., message: AnyStr = ...
 ) -> None: ...
 def navigate(
-    page: String,
-    url: Optional[String] = ...,
-    view: Optional[String] = ...,
-    params: Optional[Dict[String, String]] = ...,
-    sessionId: String = ...,
-    pageId: String = ...,
+    page: AnyStr,
+    url: Optional[AnyStr] = ...,
+    view: Optional[AnyStr] = ...,
+    params: Optional[Dict[AnyStr, AnyStr]] = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
     newTab: bool = ...,
 ) -> None: ...
-def navigateBack(sessionId: String = ..., pageId: String = ...) -> None: ...
-def navigateForward(sessionId: String = ..., pageId: String = ...) -> None: ...
+def navigateBack(sessionId: AnyStr = ..., pageId: AnyStr = ...) -> None: ...
+def navigateForward(sessionId: AnyStr = ..., pageId: AnyStr = ...) -> None: ...
 def openDock(
-    id: String,
-    sessionId: String = ...,
-    pageId: String = ...,
-    params: Optional[Dict[String, String]] = ...,
+    id: AnyStr,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
+    params: Optional[Dict[AnyStr, AnyStr]] = ...,
 ) -> None: ...
 def openPopup(
-    id: String,
-    view: String,
-    params: Optional[Dict[String, Any]] = ...,
-    title: String = ...,
-    position: Optional[Dict[String, Union[int, String]]] = ...,
+    id: AnyStr,
+    view: AnyStr,
+    params: Optional[Dict[AnyStr, Any]] = ...,
+    title: AnyStr = ...,
+    position: Optional[Dict[AnyStr, Union[int, AnyStr]]] = ...,
     showCloseIcon: bool = ...,
     draggable: bool = ...,
     resizable: bool = ...,
     modal: bool = ...,
     overlayDismiss: bool = ...,
-    sessionId: String = ...,
-    pageId: String = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
     viewPortBound: bool = ...,
 ) -> None: ...
 def print(
-    message: String,
-    sessionId: String = ...,
-    pageId: String = ...,
-    destination: String = ...,
+    message: AnyStr,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
+    destination: AnyStr = ...,
 ) -> None: ...
 def refresh(
-    sessionId: Optional[String] = ..., pageId: Optional[String] = ...
+    sessionId: Optional[AnyStr] = ..., pageId: Optional[AnyStr] = ...
 ) -> None: ...
 def sendMessage(
-    messageType: String,
-    payload: Dict[String, String],
-    scope: String = ...,
-    sessionId: String = ...,
-    pageId: String = ...,
+    messageType: AnyStr,
+    payload: Dict[AnyStr, AnyStr],
+    scope: AnyStr = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
 ) -> None: ...
 def setTheme(
-    name: String, sessionId: Optional[String] = ..., pageId: Optional[String] = ...
+    name: AnyStr, sessionId: Optional[AnyStr] = ..., pageId: Optional[AnyStr] = ...
 ) -> None: ...
 def toggleDock(
-    id: String,
-    sessionId: String = ...,
-    pageId: String = ...,
-    params: Optional[Dict[String, String]] = ...,
+    id: AnyStr,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
+    params: Optional[Dict[AnyStr, AnyStr]] = ...,
 ) -> None: ...
 def togglePopup(
-    id: String,
-    view: String,
-    params: Optional[Dict[String, Any]],
-    title: String = ...,
-    position: Optional[Dict[String, Union[int, String]]] = ...,
+    id: AnyStr,
+    view: AnyStr,
+    params: Optional[Dict[AnyStr, Any]],
+    title: AnyStr = ...,
+    position: Optional[Dict[AnyStr, Union[int, AnyStr]]] = ...,
     showCloseIcon: bool = ...,
     draggable: bool = ...,
     resizable: bool = ...,
     modal: bool = ...,
     overlayDismiss: bool = ...,
-    sessionId: String = ...,
-    pageId: String = ...,
+    sessionId: AnyStr = ...,
+    pageId: AnyStr = ...,
     viewPortBound: bool = ...,
 ) -> None: ...
-def vibrateDevice(duration: int, sessionId: Optional[String] = ...) -> None: ...
+def vibrateDevice(duration: int, sessionId: Optional[AnyStr] = ...) -> None: ...
