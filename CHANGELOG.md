@@ -1,3 +1,46 @@
+## v8.1.26 (2023-03-26)
+
+## v8.1.25.post5 (2023-03-20)
+
+### Refactor
+
+- **system**: replace BasicDataset with Dataset (#108)
+
+## v8.1.25.post4 (2023-03-09)
+
+### Feat
+
+- **system**: add iec61850 module (#107)
+
+## v8.1.25.post3 (2023-02-23)
+
+## v8.1.24.post3 (2023-02-23)
+
+### Fix
+
+- **javax**: add return type to JPasswordField.getPassword (#103)
+
+## v8.1.25.post2 (2023-02-23)
+
+## v8.1.24.post2 (2023-02-23)
+
+### Feat
+
+- **javax**: add JPasswordField getText (#100)
+
+### Refactor
+
+- **java**: create the String class (#101)
+
+## v8.1.25.post1 (2023-02-21)
+
+## v8.1.24.post1 (2023-02-21)
+
+### Feat
+
+- **java**: add GridLayout and JPasswordField (#99)
+- **java**: add util.Arrays static class (#98)
+
 ## v8.1.25.post5 (2023-03-20)
 
 ### Refactor
