@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Optional, Tuple, Union
 
-from com.inductiveautomation.factorypmi.application import FPMIWindow
+from com.inductiveautomation.factorypmi.application import FPMIApp, FPMIWindow
 from com.inductiveautomation.factorypmi.application.script import PyComponentWrapper
 from com.inductiveautomation.ignition.common.model.values import QualityCode
 from dev.thecesrom.helper.types import AnyStr
@@ -32,6 +32,12 @@ class INavUtilities:
     ) -> PyObject: ...
     def swapTo(self, name: AnyStr, params: Dict[AnyStr, Any]) -> PyObject: ...
     def swapWindow(self, *args: Any) -> PyObject: ...
+
+class ClientDatasetUtilities(Object):
+    def __init__(self, app: FPMIApp) -> None: ...
+
+class ClientSystemUtilities(Object):
+    def __init__(self) -> None: ...
 
 class NavUtilities(INavUtilities):
     def centerWindow(self, arg: Union[FPMIWindow, AnyStr]) -> None: ...

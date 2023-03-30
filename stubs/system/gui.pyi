@@ -1,16 +1,15 @@
-from typing import Any, Callable, List, Optional, Tuple, Union
+from typing import Any, Callable, List, Optional, Tuple
 
 from com.inductiveautomation.factorypmi.application import FPMIWindow
 from com.inductiveautomation.factorypmi.application.script.builtin import (
     WindowUtilities,
 )
-from dev.thecesrom.helper.types import AnyStr
+from dev.thecesrom.helper.types import AnyNum, AnyStr
 from java.awt import Color
 from java.org.jdesktop.core.animation.timing import Animator
 from java.util import EventObject
 from javax.swing import JComponent, JFrame, JPopupMenu
 
-Number = Union[float, int]
 ACCL_NONE: int
 ACCL_CONSTANT: int
 ACCL_FAST_TO_SLOW: int
@@ -63,8 +62,8 @@ def passwordBox(
 def setScreenIndex(index: int) -> None: ...
 def setTouchscreenModeEnabled(enabled: bool) -> None: ...
 def showNumericKeypad(
-    initialValue: Number, fontSize: Optional[int] = ..., usePasswordMode: bool = ...
-) -> Number: ...
+    initialValue: AnyNum, fontSize: Optional[int] = ..., usePasswordMode: bool = ...
+) -> AnyNum: ...
 def showTouchscreenKeyboard(
     initialText: AnyStr,
     fontSize: Optional[int] = ...,

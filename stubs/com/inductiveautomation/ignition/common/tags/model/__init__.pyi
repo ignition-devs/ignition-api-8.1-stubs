@@ -1,8 +1,46 @@
-from typing import Union
+from typing import Any, Optional, Union
 
 from com.inductiveautomation.ignition.common import Path
+from com.inductiveautomation.ignition.common.browsing import BrowseFilter
 from com.inductiveautomation.ignition.common.config import Property
+from com.inductiveautomation.ignition.common.gson import (
+    JsonDeserializationContext,
+    JsonElement,
+    JsonSerializationContext,
+)
+from com.inductiveautomation.ignition.common.user import AuthenticatedUser
 from dev.thecesrom.helper.types import AnyStr
+from java.lang import Object
+from java.lang.reflect import Type
+
+class TagManager:
+    def browseAsync(
+        self,
+        tagPath: TagPath,
+        browseFilter: BrowseFilter,
+        securityContext: Optional[SecurityContext] = ...,
+    ) -> Any: ...
+
+class SecurityContext(Object):
+    @staticmethod
+    def emptyContext() -> SecurityContext: ...
+    @staticmethod
+    def fromAuthenticatedUser(user: AuthenticatedUser) -> SecurityContext: ...
+
+    class GsonAdapter(Object):
+        def __init__(self) -> None: ...
+        def deserialize(
+            self,
+            jsonElement: JsonElement,
+            type_: Type,
+            jsonDeserializationContext: JsonDeserializationContext,
+        ) -> SecurityContext: ...
+        def serialize(
+            self,
+            securityContext: SecurityContext,
+            type_: Type,
+            jsonSerializationContext: JsonSerializationContext,
+        ) -> JsonElement: ...
 
 class TagPath(Path):
     def compareTo(self, that: TagPath) -> int: ...

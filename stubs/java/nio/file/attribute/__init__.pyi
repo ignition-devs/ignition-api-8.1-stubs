@@ -1,12 +1,10 @@
-from typing import List, TypeVar
+from typing import Any, List
 
 from dev.thecesrom.helper.types import AnyStr
 from java.lang import Enum, Object
 from java.security import Principal
 from java.time import Instant
 from java.util.concurrent import TimeUnit
-
-T = TypeVar("T")
 
 class AttributeView:
     def name(self) -> AnyStr: ...
@@ -24,7 +22,7 @@ class BasicFileAttributes:
 
 class FileAttribute:
     def name(self) -> AnyStr: ...
-    def value(self) -> T: ...
+    def value(self) -> Any: ...
 
 class FileAttributeView(AttributeView):
     def name(self) -> AnyStr: ...
