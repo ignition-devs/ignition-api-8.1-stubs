@@ -1,8 +1,7 @@
-from typing import List, Optional, Union
+from typing import List, Optional
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.thecesrom.helper.types import AnyNum, AnyStr
 
-Number = Union[float, int]
 NUL: int
 PULSE_ON: int
 PULSE_OFF: int
@@ -12,7 +11,7 @@ CLOSE: int
 TRIP: int
 
 def directOperateAnalog(
-    deviceName: AnyStr, index: int, value: Number, variation: Optional[int] = ...
+    deviceName: AnyStr, index: int, value: AnyNum, variation: Optional[int] = ...
 ) -> int: ...
 def directOperateBinary(
     deviceName: AnyStr,
@@ -32,7 +31,7 @@ def freezeCountersAtTime(
     deviceName: AnyStr, absoluteTime: int, intervalTime: int, indexes: List[int]
 ) -> None: ...
 def selectOperateAnalog(
-    deviceName: AnyStr, index: int, value: Number, variation: Optional[int] = ...
+    deviceName: AnyStr, index: int, value: AnyNum, variation: Optional[int] = ...
 ) -> int: ...
 def selectOperateBinary(
     deviceName: AnyStr,
