@@ -1,7 +1,7 @@
 from typing import Any
 
 import org.slf4j.event
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.lang import Object
 
 class Level(Object):

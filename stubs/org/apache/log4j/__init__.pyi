@@ -1,6 +1,6 @@
 from typing import Any, Optional
 
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.lang import Object, Throwable
 from java.util import Enumeration
 from org.apache.log4j.spi import ErrorHandler, Filter, LoggerRepository, LoggingEvent

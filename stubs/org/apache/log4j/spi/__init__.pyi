@@ -1,7 +1,7 @@
 from typing import Any, Optional
 
 import java.lang
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.util import Enumeration
 
 class OptionHandler:

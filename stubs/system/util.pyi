@@ -88,7 +88,7 @@ def retarget(
     project: AnyStr,
     addresses: Optional[Union[AnyStr, List[AnyStr]]] = ...,
     params: Optional[Dict[AnyStr, Any]] = ...,
-    windows: Optional[AnyStr] = ...,
+    windows: Optional[List[AnyStr]] = ...,
 ) -> None: ...
 def sendMessage(
     project: AnyStr,

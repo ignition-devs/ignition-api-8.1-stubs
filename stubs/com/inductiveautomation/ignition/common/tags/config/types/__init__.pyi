@@ -1,6 +1,6 @@
 from typing import Iterable
 
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.lang import Enum
 
 class TagObjectType(Enum):

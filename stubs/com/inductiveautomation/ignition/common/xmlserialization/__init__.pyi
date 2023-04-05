@@ -1,7 +1,7 @@
 from typing import Any
 
 import java.lang
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 
 class ClassNameResolver(java.lang.Object):
     def __init__(self) -> None: ...

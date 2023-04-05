@@ -1,6 +1,6 @@
 from typing import Any
 
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from enum import Enum
 from java.io import Closeable, Flushable, Reader, Writer
 from java.lang import Object
