@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Union
 
 from dev.thecesrom.helper.types import AnyStr
 from java.util import Date, Locale
@@ -42,8 +42,8 @@ def monthsBetween(date_1: Date, date_2: Date) -> int: ...
 def now() -> Date: ...
 def parse(
     dateString: AnyStr,
-    formatString: Optional[AnyStr] = ...,
-    locale: Optional[Locale] = ...,
+    formatString: AnyStr = ...,
+    locale: Union[AnyStr, Locale, None] = ...,
 ) -> Date: ...
 def secondsBetween(date_1: Date, date_2: Date) -> int: ...
 def setTime(date: Date, hour: int, minute: int, second: int) -> Date: ...

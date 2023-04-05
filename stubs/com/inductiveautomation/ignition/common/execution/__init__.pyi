@@ -1,6 +1,6 @@
 from typing import Any, Optional, Union
 
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.lang import Runnable
 from java.util.concurrent import ScheduledFuture, TimeUnit
 

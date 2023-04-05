@@ -1,9 +1,9 @@
-from copy import PyStringMap as PyStringMap
+from copy import PyStringMap
 from typing import Any, List, Mapping, Optional, Set
 
 from com.codahale.metrics import Timer
 from com.inductiveautomation.ignition.common.script.hints import ScriptFunctionHint
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.io import OutputStream
 from java.lang import Class, Object
 from java.util import UUID

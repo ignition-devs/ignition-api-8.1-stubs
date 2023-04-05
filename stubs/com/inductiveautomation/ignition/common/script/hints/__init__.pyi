@@ -1,6 +1,6 @@
 from typing import Mapping
 
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 
 class ScriptFunctionHint:
     def getAutocompleteText(self) -> AnyStr: ...

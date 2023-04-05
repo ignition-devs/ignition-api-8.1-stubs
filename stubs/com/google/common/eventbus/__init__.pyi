@@ -1,6 +1,6 @@
 from typing import Any
 
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.lang import Object
 
 class EventBus(Object):

@@ -5,7 +5,7 @@ from com.inductiveautomation.ignition.common.project.resource import (
     ProjectResourceId,
     ResourceType,
 )
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.thecesrom.helper.types import AnyStr
 from java.lang import Object
 
 class ResourceFilter(Object):
