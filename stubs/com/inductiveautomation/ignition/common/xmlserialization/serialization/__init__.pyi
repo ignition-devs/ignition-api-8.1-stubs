@@ -1,4 +1,3 @@
-# flake8: noqa
 from typing import Any, List
 
 from com.inductiveautomation.ignition.common.xmlserialization import ClassNameResolver
