@@ -20,6 +20,8 @@ PREVIEW_FLAG: int
 SSL_FLAG: int
 WEBSTART_FLAG: int
 
+globals: Dict[AnyStr, Any]
+
 def audit(
     action: Optional[AnyStr] = ...,
     actionValue: Optional[AnyStr] = ...,
