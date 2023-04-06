@@ -1,7 +1,7 @@
 from typing import Any, Optional
 
-import java.lang
 from dev.thecesrom.helper.types import AnyStr
+from java.lang import Exception, Object
 from java.util import Enumeration
 
 class OptionHandler:
@@ -12,7 +12,7 @@ class ErrorHandler(OptionHandler):
     def error(
         self,
         message: AnyStr,
-        e: Optional[java.lang.Exception] = ...,
+        e: Optional[Exception] = ...,
         errorCode: Optional[int] = ...,
         event: Optional[LoggingEvent] = ...,
     ) -> None: ...
@@ -43,13 +43,13 @@ class LoggerRepository:
     def setThreshold(self, arg: Any) -> None: ...
     def shutdown(self) -> None: ...
 
-class Filter(java.lang.Object, OptionHandler):
+class Filter(Object, OptionHandler):
     def activateOptions(self) -> None: ...
     def decide(self, event: LoggingEvent) -> int: ...
     def getNext(self) -> Filter: ...
     def setNext(self, next: Filter) -> None: ...
 
-class LoggingEvent(java.lang.Object):
+class LoggingEvent(Object):
     categoryName: AnyStr
     fqnOfCategoryClass: AnyStr
     level: Any
