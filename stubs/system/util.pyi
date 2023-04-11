@@ -19,7 +19,6 @@ MOBILE_FLAG: int
 PREVIEW_FLAG: int
 SSL_FLAG: int
 WEBSTART_FLAG: int
-
 globals: Dict[AnyStr, Any]
 
 def audit(
