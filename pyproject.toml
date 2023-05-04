@@ -5,7 +5,7 @@ requires = [
 ]
 
 [project]
-name = "ignition_api_stubs"
+name = "ignition-api-stubs"
 version = "8.1.27"
 description = "Ignition Scripting API Stubs"
 readme = "README.md"
@@ -16,26 +16,26 @@ keywords = [
   "scada",
 ]
 license = {file = "LICENSE"}
-authors = [{name = "César Román", email = "cesar@thecesrom.dev"}]
+authors = [{name = "César Román", email = "cesar@coatl.dev"}]
 requires-python = "<3.11, >=3.7"
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Intended Audience :: Developers",
-    "Intended Audience :: Information Technology",
-    "Intended Audience :: Manufacturing",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: MacOS :: MacOS X",
-    "Operating System :: Microsoft :: Windows",
-    "Operating System :: POSIX :: Linux",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Typing :: Stubs Only",
-    "Typing :: Typed",
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: Manufacturing",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Typing :: Stubs Only",
+  "Typing :: Typed",
 ]
 dependencies = [
   "mypy[python2]==0.971",
@@ -46,7 +46,6 @@ Funding = "https://github.com/sponsors/thecesrom"
 Homepage = "https://ignition-api.github.io/stubs"
 Source = "https://github.com/ignition-api/stubs"
 Tracker = "https://github.com/ignition-api/stubs/issues"
-
 
 [tool.setuptools]
 include-package-data = true
