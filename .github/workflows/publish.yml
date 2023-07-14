@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v5.1.2
+    uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v5
     with:
       python-version: "3.10"
     secrets:
