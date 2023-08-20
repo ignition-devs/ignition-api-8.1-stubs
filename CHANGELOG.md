@@ -1,3 +1,9 @@
+## v8.1.31 (2023-08-20)
+
+### Refactor
+
+- **system**: add kwargs to named query functions (#130)
+
 ## v8.1.30 (2023-07-14)
 
 ### Fix
