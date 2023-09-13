@@ -11,4 +11,4 @@ jobs:
   test:
     uses: coatl-dev/workflows/.github/workflows/tox-envs.yml@v5
     with:
-      python-versions: '["3.7", "3.8", "3.9", "3.10"]'
+      python-versions: '["3.7", "3.8", "3.9", "3.10", "3.11"]'
