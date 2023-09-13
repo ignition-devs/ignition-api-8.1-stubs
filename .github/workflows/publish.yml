@@ -9,6 +9,6 @@ jobs:
   publish:
     uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v5
     with:
-      python-version: "3.10"
+      python-version: "3.11"
     secrets:
       password: ${{ secrets.PYPI_API_TOKEN_IGNITION_API_STUBS }}

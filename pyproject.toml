@@ -17,7 +17,7 @@ keywords = [
 ]
 license = {file = "LICENSE"}
 authors = [{name = "César Román", email = "cesar@coatl.dev"}]
-requires-python = "<3.11, >=3.7"
+requires-python = ">=3.7"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
@@ -28,12 +28,12 @@ classifiers = [
   "Operating System :: Microsoft :: Windows",
   "Operating System :: POSIX :: Linux",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.7",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
   "Typing :: Stubs Only",
   "Typing :: Typed",
 ]
