@@ -9,6 +9,6 @@ on:
 
 jobs:
   test:
-    uses: coatl-dev/workflows/.github/workflows/tox-envs.yml@v5
+    uses: coatl-dev/workflows/.github/workflows/tox-envs.yml@v6
     with:
       python-versions: '["3.7", "3.8", "3.9", "3.10", "3.11"]'
