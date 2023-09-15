@@ -1,3 +1,17 @@
+## v8.1.32 (2023-09-15)
+
+### Feat
+
+- **system**: add Ignition 8.1.32 new features (#136)
+
+## v8.1.31.post2 (2023-09-13)
+
+## v8.1.31.post1 (2023-08-28)
+
+### Feat
+
+- **system**: add mongodb module (#132)
+
 ## v8.1.31.post2 (2023-09-13)
 
 ## v8.1.31.post1 (2023-08-28)
