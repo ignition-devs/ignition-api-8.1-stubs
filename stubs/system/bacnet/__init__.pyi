@@ -10,6 +10,12 @@ def readRaw(
     propertyId: PropertyIdentifier,
     propertyArrayIndex: Optional[int] = ...,
 ) -> List[Any]: ...
+def readRawMultiple(
+    deviceName: AnyStr,
+    objectTypes: List[ObjectType],
+    objectIds: List[int],
+    propertyIds: List[PropertyIdentifier],
+) -> List[Any]: ...
 def synchronizeTime(deviceName: AnyStr) -> None: ...
 def synchronizeTimeUtc(deviceName: AnyStr) -> None: ...
 def writeRaw(
@@ -18,8 +24,17 @@ def writeRaw(
     objectId: int,
     propertyId: PropertyIdentifier,
     value: Any,
-    priority: int,
-    propertyArrayIndex: int,
+    priority: int = ...,
+    propertyArrayIndex: Optional[int] = ...,
+) -> None: ...
+def writeRawMultiple(
+    deviceName: AnyStr,
+    objectTypes: List[ObjectType],
+    objectIds: List[int],
+    propertyIds: List[PropertyIdentifier],
+    values: List[Any],
+    priorities: Optional[List[int]] = ...,
+    propertyArrayIndices: Optional[List[int]] = ...,
 ) -> None: ...
 def writeWithPriority(
     deviceName: AnyStr, objectType: int, objectId: int, value: Any, priority: int
