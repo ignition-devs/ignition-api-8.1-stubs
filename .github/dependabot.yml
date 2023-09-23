@@ -16,9 +16,7 @@ updates:
     allow:
       - dependency-name: "mypy*"
         dependency-type: "indirect"
-      - dependency-name: "types-enum34"
-        dependency-type: "direct"
     labels: ["pip-dependencies"]
     commit-message:
       include: scope
-      prefix: "pip(deps)"
+      prefix: "build(pip)"
