@@ -1,2 +1,2 @@
-mypy[python2]==0.971
+mypy[python2]==1.5.1
 types-enum34
