@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["gh-dependencies"]
+    commit-message:
+      include: scope
+      prefix: "ci(deps)"
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "all"
+    labels: ["pip-dependencies"]
+    commit-message:
+      prefix: "pip"

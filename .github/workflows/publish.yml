@@ -6,9 +6,14 @@ on:
       - published
 
 jobs:
-  publish:
-    uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v6
+  tox:
+    uses: coatl-dev/workflows/.github/workflows/tox.yml@v7
+
+  pypi-publish:
+    needs: 
+      - tox
+    uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v7
     with:
-      python-version: "3.11"
+      python-version: '3.11'
     secrets:
       password: ${{ secrets.PYPI_API_TOKEN_IGNITION_API_STUBS }}
