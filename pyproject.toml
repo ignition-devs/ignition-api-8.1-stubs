@@ -53,3 +53,11 @@ package-dir = {"" = "stubs"}
 
 [tool.setuptools.package-data]
 "*" = ["*.pyi", "py.typed"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+gpg_sign = true
