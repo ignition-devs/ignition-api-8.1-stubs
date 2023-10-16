@@ -4,19 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    labels: ["gh-dependencies"]
+    labels: ["dependencies"]
     commit-message:
       include: scope
       prefix: "ci(deps)"
-
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    allow:
-      - dependency-name: "mypy*"
-        dependency-type: "indirect"
-    labels: ["pip-dependencies"]
-    commit-message:
-      include: scope
-      prefix: "build(pip)"
