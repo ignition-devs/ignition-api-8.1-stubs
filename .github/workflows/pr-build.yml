@@ -5,13 +5,13 @@ on:
     branches:
       - main
     paths:
-      - stubs
+      - 'stubs/**'
       - pyproject.toml
       - requirements.txt
       - tox.ini
 
 jobs:
   test:
-    uses: coatl-dev/workflows/.github/workflows/tox-envs.yml@v1
+    uses: coatl-dev/workflows/.github/workflows/tox-envs.yml@coatl
     with:
       python-versions: '["3.7", "3.8", "3.9", "3.10", "3.11"]'
