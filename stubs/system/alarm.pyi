@@ -27,7 +27,9 @@ def queryJournal(
     defined: Optional[List[AnyStr]] = ...,
     includeData: Optional[bool] = ...,
     includeSystem: Optional[bool] = ...,
+    includeShelved: Optional[bool] = ...,
     isSystem: Optional[bool] = ...,
+    provider: Optional[List[AnyStr]] = ...,
 ) -> AlarmQueryResultImpl: ...
 def queryStatus(
     priority: Optional[List[Union[AnyStr, int]]] = ...,
