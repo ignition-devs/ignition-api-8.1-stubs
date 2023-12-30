@@ -42,7 +42,7 @@ dependencies = [
   "types-enum34",
 ]
 [project.urls]
-Funding = "https://github.com/sponsors/thecesrom"
+Funding = "https://github.com/sponsors/coatl"
 Homepage = "https://ignition-api.github.io/stubs"
 Source = "https://github.com/ignition-api/stubs"
 Tracker = "https://github.com/ignition-api/stubs/issues"

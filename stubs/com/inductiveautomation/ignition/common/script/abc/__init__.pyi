@@ -1,6 +1,6 @@
 from typing import Any, Iterator, Optional, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.lang import Class
 from org.python.core import PyInteger, PyList, PyObject, PySequence
 

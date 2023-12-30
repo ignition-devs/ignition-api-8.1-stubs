@@ -1,6 +1,6 @@
 from typing import Any, List, Optional
 
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.coatl.helper.types import AnyStr as AnyStr
 from java.lang import Object
 
 class KeyboardLayout(Object):

@@ -1,6 +1,6 @@
 from typing import List
 
-from dev.thecesrom.helper.types import AnyNum
+from dev.coatl.helper.types import AnyNum
 
 def geometricMean(values: List[AnyNum]) -> float: ...
 def kurtosis(values: List[AnyNum]) -> float: ...

@@ -1,6 +1,6 @@
 from typing import Dict, Optional, Set
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.lang import CharSequence, Object
 
 class Clock(Object):

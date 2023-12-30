@@ -1,6 +1,6 @@
 from typing import Any, Iterable, List, Optional, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.io import Closeable
 from java.lang import AutoCloseable, Class, Comparable, Enum, Object, Throwable
 from java.util import Date

@@ -4,7 +4,7 @@ from com.inductiveautomation.ignition.common.browsing import Results
 from com.inductiveautomation.ignition.common.model.values import QualityCode
 from com.inductiveautomation.ignition.common.sqltags.history import AggregateInfo
 from com.inductiveautomation.opccom.hda import AttributeInfo, ReadResult
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.util import Date
 
 def browse(root: AnyStr) -> List[Results]: ...

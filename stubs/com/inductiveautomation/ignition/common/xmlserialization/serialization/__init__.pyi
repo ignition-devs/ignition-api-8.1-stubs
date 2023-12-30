@@ -7,7 +7,7 @@ from com.inductiveautomation.ignition.common.xmlserialization.encoding import (
 from com.inductiveautomation.ignition.common.xmlserialization.serialization.equalitydelegates import (
     EqualityDelegate,
 )
-from dev.thecesrom.helper.types import AnyStr as AnyStr
+from dev.coatl.helper.types import AnyStr as AnyStr
 from java.lang import Class, Object
 
 class Element(Object):

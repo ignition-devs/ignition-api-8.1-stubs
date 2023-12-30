@@ -1,7 +1,7 @@
 from typing import Iterable, Mapping
 
 import ch.qos.logback.classic
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.lang import Enum
 
 class LogFilterSettings:

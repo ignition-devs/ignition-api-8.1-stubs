@@ -1,6 +1,6 @@
 from typing import Any, Iterator, List, Optional, Set, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.io import BufferedReader, BufferedWriter, InputStream, OutputStream
 from java.lang import AutoCloseable, CharSequence, Class, Enum, Object
 from java.nio.channels import SeekableByteChannel

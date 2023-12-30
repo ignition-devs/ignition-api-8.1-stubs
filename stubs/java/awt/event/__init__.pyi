@@ -1,6 +1,6 @@
 from typing import Any
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.awt import AWTEvent, Component, Point
 from java.lang import Object
 

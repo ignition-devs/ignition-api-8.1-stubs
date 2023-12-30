@@ -1,6 +1,6 @@
 from typing import Any, List, Optional
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 
 def fileExists(filepath: AnyStr) -> bool: ...
 def getTempFile(extension: AnyStr) -> AnyStr: ...

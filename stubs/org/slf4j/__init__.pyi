@@ -1,6 +1,6 @@
 from typing import Any, Iterable, Optional, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 
 class Logger:
     ROOT_LOGGER_NAME: str

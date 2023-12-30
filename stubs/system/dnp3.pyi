@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from dev.thecesrom.helper.types import AnyNum, AnyStr
+from dev.coatl.helper.types import AnyNum, AnyStr
 
 NUL: int
 PULSE_ON: int

@@ -2,7 +2,7 @@ from typing import Iterable, List
 
 from com.inductiveautomation.ignition.common.util import Timeline
 from com.palantir.ptoss.cinch.core import DefaultBindableModel
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.lang import Enum
 from java.util import Calendar, Date
 

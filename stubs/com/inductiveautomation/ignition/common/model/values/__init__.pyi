@@ -1,7 +1,7 @@
 from typing import Any, Iterable, Union
 
 from com.inductiveautomation.ignition.common.gson import JsonObject
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.lang import Enum, Object
 from java.util import Date
 
