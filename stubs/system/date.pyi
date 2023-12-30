@@ -1,6 +1,6 @@
 from typing import Optional, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.util import Date, Locale
 
 def addDays(date: Date, value: int) -> Date: ...

@@ -1,6 +1,6 @@
 from typing import Any, Iterable, List, Mapping, Optional, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.awt import Dimension, Image
 from java.io import File, InputStream, OutputStream, PrintWriter, Writer
 from java.lang import Enum, Object

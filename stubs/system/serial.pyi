@@ -1,7 +1,7 @@
 from typing import Any, List, Optional
 
 from com.inductiveautomation.ignition.modules.serial.scripting import SerialScriptModule
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 
 BIT_RATE_110: int
 BIT_RATE_150: int

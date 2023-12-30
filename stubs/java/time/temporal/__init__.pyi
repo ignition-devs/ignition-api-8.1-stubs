@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Optional
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.lang import Enum, Object
 from java.time import Duration
 from java.time.format import ResolverStyle

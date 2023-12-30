@@ -1,6 +1,6 @@
 from typing import Optional, Tuple
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.util import EventObject
 
 def getRoles() -> Tuple[AnyStr, ...]: ...

@@ -1,7 +1,7 @@
 from copy import PyStringMap as PyStringMap  # noqa: F401
 from typing import Any, Iterable, Iterator, List, Mapping, Optional, Tuple, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from enum import Enum
 from java.io import PrintWriter
 from java.lang import Class, Object, RuntimeException, StringBuilder

@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Tuple
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 
 def addConnection(
     name: AnyStr,

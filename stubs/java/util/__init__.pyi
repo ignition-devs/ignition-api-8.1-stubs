@@ -1,6 +1,6 @@
 from typing import Any, Dict, Iterable, List, Mapping, Optional, Set, Union
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.lang import Class, Object
 from java.time import Instant, ZoneId
 from java.util.function import (

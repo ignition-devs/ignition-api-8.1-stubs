@@ -1,6 +1,6 @@
 from typing import Any, List, Mapping, Optional, Set
 
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.io import Closeable, InputStream, OutputStream
 from java.lang import Class, Enum, Object
 from java.nio.channels import SocketChannel

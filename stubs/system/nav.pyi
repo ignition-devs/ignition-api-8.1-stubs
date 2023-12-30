@@ -2,7 +2,7 @@ from typing import Any, Dict, Optional, Union
 
 from com.inductiveautomation.factorypmi.application import FPMIWindow
 from com.inductiveautomation.factorypmi.application.script.builtin import NavUtilities
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 from java.util import EventObject
 
 def centerWindow(arg: Union[AnyStr, FPMIWindow]) -> None: ...

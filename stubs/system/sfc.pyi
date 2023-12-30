@@ -2,7 +2,7 @@ from typing import Any, Dict, Optional
 
 from com.inductiveautomation.ignition.common import BasicDataset
 from com.inductiveautomation.sfc.api import PyChartScope
-from dev.thecesrom.helper.types import AnyStr
+from dev.coatl.helper.types import AnyStr
 
 def cancelChart(instanceId: AnyStr) -> None: ...
 def getRunningCharts(chartPath: Optional[AnyStr] = ...) -> BasicDataset: ...
