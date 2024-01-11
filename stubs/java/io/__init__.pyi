@@ -7,8 +7,10 @@ from java.lang import (
     CharSequence,
     Exception,
     Object,
+    Readable,
     Throwable,
 )
+from java.nio.charset import Charset, CharsetDecoder
 
 class Closeable(AutoCloseable):
     def close(self) -> None: ...
@@ -86,7 +88,8 @@ class IOException(Exception):
         self, message: Optional[str] = ..., cause: Optional[Throwable] = ...
     ) -> None: ...
 
-class Reader(Object, AutoCloseable):
+class Reader(Object, Readable, Closeable):
+    def __init__(self, lock: Optional[Object] = ...) -> None: ...
     def close(self) -> None: ...
     def mark(self, readAheadLimit: int) -> None: ...
     def markSupported(self) -> bool: ...
@@ -100,7 +103,14 @@ class Reader(Object, AutoCloseable):
 
 class BufferedReader(Reader):
     def __init__(self, in_: Reader, sz: Optional[int] = ...) -> None: ...
-    def close(self) -> None: ...
+
+class InputStreamReader(Reader):
+    def __init__(
+        self,
+        in_: InputStream,
+        arg: Optional[Union[AnyStr, Charset, CharsetDecoder]] = ...,
+    ) -> None: ...
+    def getEncoding(self) -> AnyStr: ...
 
 class Writer(Object, Appendable, Closeable, Flushable):
     def append(

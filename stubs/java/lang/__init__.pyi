@@ -3,6 +3,7 @@ from typing import Any, List, Optional, Union
 
 from dev.coatl.helper.types import AnyStr
 from java.lang.reflect import Type
+from java.nio import CharBuffer
 
 class Object:
     def __init__(self) -> None: ...
@@ -38,6 +39,9 @@ class CharSequence:
 
 class Comparable:
     def compareTo(self, o: Any) -> int: ...
+
+class Readable:
+    def read(self, cb: CharBuffer) -> int: ...
 
 class Runnable:
     def run(self) -> None: ...
