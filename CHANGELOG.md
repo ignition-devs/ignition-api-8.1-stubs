@@ -1,3 +1,13 @@
+## v8.1.36.post1 (2024-01-11)
+
+### Feat
+
+- **java**: add io.InputStreamReader and supporting classes (#162)
+
+### Refactor
+
+- **system**: change db.runNameQuery return type to Any (#161)
+
 ## v8.1.36 (2024-01-09)
 
 ### Refactor
