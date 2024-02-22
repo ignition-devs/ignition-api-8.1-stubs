@@ -1,23 +1,23 @@
 # ignition-api-stubs
 
 <!--- Badges --->
-![GitHub last commit (stubs)](https://img.shields.io/github/last-commit/ignition-api/stubs/main)
-[![GitHub contributors](https://img.shields.io/github/contributors/ignition-api/stubs)](https://github.com/ignition-api/stubs/graphs/contributors)
+![GitHub last commit (stubs)](https://img.shields.io/github/last-commit/ignition-api/8.1-stubs/main)
+[![GitHub contributors](https://img.shields.io/github/contributors/ignition-api/8.1-stubs)](https://github.com/ignition-api/8.1-stubs/graphs/contributors)
 [![Downloads](https://pepy.tech/badge/ignition-api-stubs)](https://pepy.tech/project/ignition-api-stubs)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-api/stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-api/stubs/main)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-api/8.1-stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-api/8.1-stubs/main)
 [![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/ignition-api/discussions/discussions)
 
 This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`ignition-api/8.1`](https://github.com/ignition-api/8.1). These files were generated using `mypy`'s [`stubgen`](https://mypy.readthedocs.io/en/stable/stubgen.html).
 
 ## Installation and usage
 
-To use ignition-api-stubs, you may install it with `pip`. It requires Python 3.7, 3.8, 3.9, 3.10 or 3.11.
+To use ignition-api-stubs, you may install it with `pip`. It requires Python 3.7+.
 
 ```sh
 python3 -m pip install ignition-api-stubs
 ```
 
-To run `mypy` against your code, execute the following command passing the source directory (typycally `src`) or a single file:
+To run `mypy` against your code, execute the following command passing the source directory (typically `src`) or a single file:
 
 ```sh
 mypy --py2 src
@@ -41,11 +41,11 @@ Feel free to post your questions and/or ideas at [Discussions](https://github.co
 
 Thanks to everyone who has contributed to this project.
 
-Up-to-date list of contributors can be found [here](https://github.com/ignition-api/stubs/graphs/contributors).
+Up-to-date list of contributors can be found [here](https://github.com/ignition-api/8.1-stubs/graphs/contributors).
 
 ## License
 
-See the [LICENSE](https://github.com/ignition-api/stubs/blob/HEAD/LICENSE).
+See the [LICENSE](https://github.com/ignition-api/8.1-stubs/blob/HEAD/LICENSE).
 
 ## Code of conduct
 
