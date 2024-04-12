@@ -6,7 +6,7 @@ requires = [
 
 [project]
 name = "ignition-api-stubs"
-version = "8.1.38"
+version = "8.1.39"
 description = "Ignition Scripting API Stubs"
 readme = "README.md"
 keywords = [
@@ -17,7 +17,7 @@ keywords = [
 ]
 license = {file = "LICENSE"}
 authors = [{name = "César Román", email = "cesar@coatl.dev"}]
-requires-python = ">=3.7, <3.13"
+requires-python = ">=3.7"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
