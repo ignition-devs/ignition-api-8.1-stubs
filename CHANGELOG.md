@@ -1,3 +1,17 @@
+## v8.1.41 (2024-05-29)
+
+### Fix
+
+- fix regression found in 8.1.40
+
+## v8.1.40 (2024-05-15)
+
+## v8.1.39.post1 (2024-04-30)
+
+### Feat
+
+- **java**: add all Calendar methods (#171)
+
 ## v8.1.39.post1 (2024-04-30)
 
 ### Feat
