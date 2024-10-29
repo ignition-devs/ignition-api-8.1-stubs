@@ -7,11 +7,15 @@ on:
 
 jobs:
   tox:
-    uses: coatl-dev/workflows/.github/workflows/tox.yml@v4
+    uses: coatl-dev/workflows/.github/workflows/tox-envs.yml@v4
+    with:
+      python-versions: '["3.7", "3.8", "3.9", "3.10", "3.11", "3.12"]'
 
   pypi-publish:
-    needs: 
+    needs:
       - tox
     uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v4
+    with:
+      python-version: '3.12'
     secrets:
       password: ${{ secrets.PYPI_API_TOKEN_IGNITION_API_STUBS }}
