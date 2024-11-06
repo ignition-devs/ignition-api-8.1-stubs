@@ -1,3 +1,10 @@
+## v8.1.44.post1 (2024-11-06)
+
+### Fix
+
+- **ia**: correct AlarmQueryResult method names (#181)
+- ignition-devs/ignition-api-8.1#306
+
 ## v8.1.44 (2024-10-23)
 
 ## v8.1.43 (2024-08-21)
