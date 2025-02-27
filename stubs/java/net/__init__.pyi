@@ -1,7 +1,7 @@
 from typing import Any, List, Mapping, Optional, Set
 
 from dev.coatl.helper.types import AnyStr
-from java.io import Closeable, InputStream, OutputStream
+from java.io import Closeable, InputStream, IOException, OutputStream
 from java.lang import Class, Enum, Object
 from java.nio.channels import SocketChannel
 
@@ -162,3 +162,6 @@ class SocketImpl(Object):
 
 class URI(Object):
     def __init__(self, *args: Any) -> None: ...
+
+class UnknownHostException(IOException):
+    def __init__(self, message: Optional[str] = ...) -> None: ...
