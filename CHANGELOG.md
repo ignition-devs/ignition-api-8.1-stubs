@@ -10,6 +10,18 @@
 
 - **ia**: add propertyArrayIndices argument to readRawMultiple (#184)
 
+## v8.1.45.post2 (2025-02-27)
+
+### Feat
+
+- add missing classes and refactor functions (#187)
+
+## v8.1.45.post1 (2025-01-13)
+
+### Refactor
+
+- **ia**: add propertyArrayIndices argument to readRawMultiple (#184)
+
 ## v8.1.45.post1 (2025-01-13)
 
 ### Refactor
