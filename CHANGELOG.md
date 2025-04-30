@@ -3,6 +3,12 @@
 ### Feat
 
 - **java**: add ByteArrey[In|Out]putStream classes to io (#192)
+
+## 8.1.47.post1 (2025-04-22)
+
+### Feat
+
+- **java**: add ByteArrey[In|Out]putStream classes to io (#192)
 - add missing classes and refactor functions (#187)
 
 ### Refactor
