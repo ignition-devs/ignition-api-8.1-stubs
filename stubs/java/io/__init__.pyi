@@ -10,6 +10,7 @@ from java.lang import (
     Readable,
     Throwable,
 )
+from java.nio.channels import FileChannel
 from java.nio.charset import Charset, CharsetDecoder
 
 class Closeable(AutoCloseable):
@@ -94,6 +95,11 @@ class ByteArrayInputStream(InputStream):
     def __init__(
         self, buf: bytearray, offset: int = ..., length: int = ...
     ) -> None: ...
+
+class FileInputStream(InputStream):
+    def __init__(self, *args: Any) -> None: ...
+    def getChannel(self) -> FileChannel: ...
+    def getFD(self) -> FileDescriptor: ...
 
 class IOException(Exception):
     def __init__(
