@@ -4,6 +4,8 @@ from typing import Any, List, Optional, Union
 from dev.coatl.helper.types import AnyStr
 from java.lang.reflect import Type
 from java.nio import CharBuffer
+from java.util import Iterator, Spliterator
+from java.util.function import Consumer
 
 class Object:
     def __init__(self) -> None: ...
@@ -39,6 +41,11 @@ class CharSequence:
 
 class Comparable:
     def compareTo(self, o: Any) -> int: ...
+
+class Iterable:
+    def forEach(self, action: Consumer) -> None: ...
+    def iterator(self) -> Iterator: ...
+    def spliterator(self) -> Spliterator: ...
 
 class Readable:
     def read(self, cb: CharBuffer) -> int: ...
