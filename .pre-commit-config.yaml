@@ -18,3 +18,9 @@ repos:
         files: \.(pyi)$
         additional_dependencies:
           - flake8-pyi
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.8.2
+    hooks:
+      - id: commitizen
+      - id: commitizen-branch
+        stages: [pre-push]

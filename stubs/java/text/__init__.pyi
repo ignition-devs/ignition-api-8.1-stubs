@@ -19,6 +19,11 @@ class CharacterIterator:
     def setIndex(self, position: int) -> str: ...
 
 class AttributedCharacterIterator(CharacterIterator):
+    class Attribute(Object):
+        INPUT_METHOD_SEGMENT: AttributedCharacterIterator.Attribute
+        LANGUAGE: AttributedCharacterIterator.Attribute
+        READING: AttributedCharacterIterator.Attribute
+
     def clone(self) -> str: ...
     def current(self) -> str: ...
     def first(self) -> str: ...
@@ -35,11 +40,6 @@ class AttributedCharacterIterator(CharacterIterator):
     def previous(self) -> str: ...
     def setIndex(self, position: int) -> str: ...
 
-    class Attribute(Object):
-        INPUT_METHOD_SEGMENT: AttributedCharacterIterator.Attribute
-        LANGUAGE: AttributedCharacterIterator.Attribute
-        READING: AttributedCharacterIterator.Attribute
-
 class FieldPosition(Object):
     def __init__(self, *args: Any) -> None: ...
     def getBeginIndex(self) -> int: ...
@@ -50,13 +50,13 @@ class FieldPosition(Object):
     def setEndIndex(self, ei: int) -> None: ...
 
 class Format(Object):
+    class Field(AttributedCharacterIterator.Attribute): ...
+
     def clone(self) -> Object: ...
     def formatToCharacterIterator(self, obj: Object) -> AttributedCharacterIterator: ...
     def parseObject(
         self, source: AnyStr, pos: Optional[ParsePosition] = ...
     ) -> Object: ...
-
-    class Field(AttributedCharacterIterator.Attribute): ...
 
 class DateFormat(Format):
     AM_PM_FIELD: int
@@ -134,6 +134,19 @@ class DateFormatSymbols(Object):
     def setZoneStrings(self, newZoneStrings: List[List[AnyStr]]) -> None: ...
 
 class NumberFormat(Format):
+    class Field(Format.Field):
+        CURRENCY: NumberFormat.Field
+        DECIMAL_SEPARATOR: NumberFormat.Field
+        EXPONENT: NumberFormat.Field
+        EXPONENT_SIGN: NumberFormat.Field
+        EXPONENT_SYMBOL: NumberFormat.Field
+        FRACTION: NumberFormat.Field
+        GROUPING_SEPARATOR: NumberFormat.Field
+        INTEGER: NumberFormat.Field
+        PERCENT: NumberFormat.Field
+        PERMILLE: NumberFormat.Field
+        SIGN: NumberFormat.Field
+
     FRACTION_FIELD: int
     INTEGER_FIELD: int
     def format(
@@ -171,19 +184,6 @@ class NumberFormat(Format):
     def setMinimumIntegerDigits(self, newValue: int) -> None: ...
     def setParseIntegerOnly(self, value: bool) -> None: ...
     def setRoundingMode(self, roundingMode: RoundingMode) -> None: ...
-
-    class Field(Format.Field):
-        CURRENCY: NumberFormat.Field
-        DECIMAL_SEPARATOR: NumberFormat.Field
-        EXPONENT: NumberFormat.Field
-        EXPONENT_SIGN: NumberFormat.Field
-        EXPONENT_SYMBOL: NumberFormat.Field
-        FRACTION: NumberFormat.Field
-        GROUPING_SEPARATOR: NumberFormat.Field
-        INTEGER: NumberFormat.Field
-        PERCENT: NumberFormat.Field
-        PERMILLE: NumberFormat.Field
-        SIGN: NumberFormat.Field
 
 class ParsePosition(Object):
     def __init__(self, index: int) -> None: ...
