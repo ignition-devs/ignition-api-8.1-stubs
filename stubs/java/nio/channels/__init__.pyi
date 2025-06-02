@@ -15,6 +15,11 @@ class WriteableByteChannel(Channel):
     def write(self, src: ByteBuffer) -> int: ...
 
 class FileChannel(Object, Channel):
+    class MapMode(Object):
+        PRIVATE: FileChannel.MapMode
+        READ_ONLY: FileChannel.MapMode
+        READ_WRITE: FileChannel.MapMode
+
     def force(self, metaData: bool) -> None: ...
     def lock(self) -> FileLock: ...
     def map(
@@ -41,11 +46,6 @@ class FileChannel(Object, Channel):
         shared: Optional[bool] = ...,
     ) -> FileLock: ...
     def write(self, *args: Any) -> Union[int, long]: ...
-
-    class MapMode(Object):
-        PRIVATE: FileChannel.MapMode
-        READ_ONLY: FileChannel.MapMode
-        READ_WRITE: FileChannel.MapMode
 
 class FileLock(Object, AutoCloseable):
     def acquiredBy(self) -> Channel: ...
