@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - .github/workflows/pr-build.yml
+      - .github/workflows/tox.yml
       - stubs/**
       - pyproject.toml
       - requirements.txt
@@ -13,6 +14,10 @@ on:
 
 jobs:
   test:
-    uses: coatl-dev/workflows/.github/workflows/tox-envs.yml@v4
+    uses: coatl-dev/workflows/.github/workflows/tox.yml@v5
     with:
-      python-versions: '["3.9", "3.10", "3.11", "3.12"]'
+      python-versions: |
+        3.9
+        3.10
+        3.11
+        3.12
