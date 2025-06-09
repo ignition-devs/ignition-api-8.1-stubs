@@ -294,6 +294,11 @@ class DataFormat:
     def getFormat(self, arg: Union[int, AnyStr]) -> int: ...
 
 class DataValidation:
+    class ErrorStyle:
+        STOP: int
+        WARNING: int
+        INFO: int
+
     def createErrorBox(self, title: AnyStr, text: AnyStr) -> None: ...
     def createPromptBox(self, title: AnyStr, text: AnyStr) -> None: ...
     def getEmptyCellAllowed(self) -> bool: ...
@@ -316,27 +321,27 @@ class DataValidation:
 class DataValidationConstraint:
     class OperatorType(Object):
         BETWEEN: int
-        EQUAL: int
-        GREATER_OR_EQUAL: int
-        GREATER_THAN: int
-        IGNORED: int
-        LESS_OR_EQUAL: int
-        LESS_THAN: int
         NOT_BETWEEN: int
+        EQUAL: int
         NOT_EQUAL: int
+        GREATER_THAN: int
+        LESS_THAN: int
+        GREATER_OR_EQUAL: int
+        LESS_OR_EQUAL: int
+        IGNORED: int
         def validateSecondArg(
             self, comparisonOperator: int, paramValue: AnyStr
         ) -> None: ...
 
     class ValidationType(Object):
         ANY: int
-        DATE: int
-        DECIMAL: int
-        FORMULA: int
         INTEGER: int
+        DECIMAL: int
         LIST: int
-        TEXT_LENGTH: int
+        DATE: int
         TIME: int
+        TEXT_LENGTH: int
+        FORMULA: int
 
     def getExplicitListValues(self) -> List[AnyStr]: ...
     def getFormula1(self) -> AnyStr: ...
@@ -441,19 +446,19 @@ class DateUtil(Object):
     def toLocalDateTime(date: Union[Calendar, Date]) -> LocalDateTime: ...
 
 class Font:
-    ANSI_CHARSET: int
     COLOR_NORMAL: int
     COLOR_RED: int
-    DEFAULT_CHARSET: int
     SS_NONE: int
-    SS_SUB: int
     SS_SUPER: int
-    SYMBOL_CHARSET: int
-    U_DOUBLE: int
-    U_DOUBLE_ACCOUNTING: int
+    SS_SUB: int
     U_NONE: int
     U_SINGLE: int
+    U_DOUBLE: int
     U_SINGLE_ACCOUNTING: int
+    U_DOUBLE_ACCOUNTING: int
+    ANSI_CHARSET: int
+    DEFAULT_CHARSET: int
+    SYMBOL_CHARSET: int
     def getBold(self) -> bool: ...
     def getCharSet(self) -> int: ...
     def getColor(self) -> Color: ...
@@ -478,13 +483,13 @@ class Font:
 
 class FontFormatting:
     SS_NONE: int
-    SS_SUB: int
     SS_SUPER: int
-    U_DOUBLE: int
-    U_DOUBLE_ACCOUNTING: int
+    SS_SUB: int
     U_NONE: int
     U_SINGLE: int
+    U_DOUBLE: int
     U_SINGLE_ACCOUNTING: int
+    U_DOUBLE_ACCOUNTING: int
     def getEscapementType(self) -> int: ...
     def getFontColor(self) -> Color: ...
     def getFontColorIndex(self) -> int: ...
@@ -509,7 +514,13 @@ class HeaderFooter:
     def setLeft(self, newLeft: AnyStr) -> None: ...
     def setRight(self, newRight: AnyStr) -> None: ...
 
-class Footer(HeaderFooter): ...
+class Footer(HeaderFooter):
+    def getCenter(self) -> AnyStr: ...
+    def getLeft(self) -> AnyStr: ...
+    def getRight(self) -> AnyStr: ...
+    def setCenter(self, newCenter: AnyStr) -> None: ...
+    def setLeft(self, newLeft: AnyStr) -> None: ...
+    def setRight(self, newRight: AnyStr) -> None: ...
 
 class FormulaEvaluator:
     def clearAllCachedResultValues(self) -> None: ...
@@ -526,7 +537,13 @@ class FormulaEvaluator:
         self, workbooks: Dict[AnyStr, FormulaEvaluator]
     ) -> None: ...
 
-class Header(HeaderFooter): ...
+class Header(HeaderFooter):
+    def getCenter(self) -> AnyStr: ...
+    def getLeft(self) -> AnyStr: ...
+    def getRight(self) -> AnyStr: ...
+    def setCenter(self, newCenter: AnyStr) -> None: ...
+    def setLeft(self, newLeft: AnyStr) -> None: ...
+    def setRight(self, newRight: AnyStr) -> None: ...
 
 class Hyperlink(IHyperlink):
     def getFirstColumn(self) -> int: ...
@@ -610,25 +627,25 @@ class Picture(Shape):
     def resize(self, *args: Any) -> AnyStr: ...
 
 class PatternFormatting:
-    ALT_BARS: int
-    BIG_SPOTS: int
-    BRICKS: int
-    DIAMONDS: int
-    FINE_DOTS: int
-    LEAST_DOTS: int
-    LESS_DOTS: int
     NO_FILL: int
     SOLID_FOREGROUND: int
+    FINE_DOTS: int
+    ALT_BARS: int
     SPARSE_DOTS: int
-    SQUARES: int
-    THICK_BACKWARD_DIAG: int
-    THICK_FORWARD_DIAG: int
     THICK_HORZ_BANDS: int
     THICK_VERT_BANDS: int
+    THICK_BACKWARD_DIAG: int
+    THICK_FORWARD_DIAG: int
+    BIG_SPOTS: int
+    BRICKS: int
     THIN_BACKWARD_DIAG: int
-    THIN_FORWARD_DIAG: int
-    THIN_HORZ_BANDS: int
     THIN_VERT_BANDS: int
+    THIN_HORZ_BANDS: int
+    THIN_FORWARD_DIAG: int
+    SQUARES: int
+    DIAMONDS: int
+    LESS_DOTS: int
+    LEAST_DOTS: int
     def getFillBackgroundColor(self) -> int: ...
     def getFillBackgroundColorColor(self) -> Color: ...
     def getFillForegroundColor(self) -> int: ...
@@ -645,6 +662,39 @@ class PictureData:
     def suggestFileExtension(self) -> AnyStr: ...
 
 class PrintSetup:
+    PRINTER_DEFAULT_PAPERSIZE: int
+    LETTER_PAPERSIZE: int
+    LETTER_SMALL_PAGESIZE: int
+    TABLOID_PAPERSIZE: int
+    LEDGER_PAPERSIZE: int
+    LEGAL_PAPERSIZE: int
+    STATEMENT_PAPERSIZE: int
+    EXECUTIVE_PAPERSIZE: int
+    A3_PAPERSIZE: int
+    A4_PAPERSIZE: int
+    A4_SMALL_PAPERSIZE: int
+    A5_PAPERSIZE: int
+    B4_PAPERSIZE: int
+    B5_PAPERSIZE: int
+    FOLIO8_PAPERSIZE: int
+    QUARTO_PAPERSIZE: int
+    TEN_BY_FOURTEEN_PAPERSIZE: int
+    ELEVEN_BY_SEVENTEEN_PAPERSIZE: int
+    NOTE8_PAPERSIZE: int
+    ENVELOPE_9_PAPERSIZE: int
+    ENVELOPE_10_PAPERSIZE: int
+    ENVELOPE_DL_PAPERSIZE: int
+    ENVELOPE_CS_PAPERSIZE: int
+    ENVELOPE_C5_PAPERSIZE: int
+    ENVELOPE_C3_PAPERSIZE: int
+    ENVELOPE_C4_PAPERSIZE: int
+    ENVELOPE_C6_PAPERSIZE: int
+    ENVELOPE_MONARCH_PAPERSIZE: int
+    A4_EXTRA_PAPERSIZE: int
+    A4_TRANSVERSE_PAPERSIZE: int
+    A4_PLUS_PAPERSIZE: int
+    LETTER_ROTATED_PAPERSIZE: int
+    A4_ROTATED_PAPERSIZE: int
     def getCopies(self) -> int: ...
     def getDraft(self) -> bool: ...
     def getFitHeight(self) -> int: ...
@@ -761,16 +811,16 @@ class Drawing(ShapeContainer):
     def createPicture(self, anchor: ClientAnchor, pictureIndex: int) -> Picture: ...
 
 class Sheet:
-    PANE_LOWER_LEFT: int
-    PANE_LOWER_RIGHT: int
-    PANE_UPPER_LEFT: int
-    PANE_UPPER_RIGHT: int
-    BottomMargin: int
-    FooterMargin: int
-    HeaderMargin: int
     LeftMargin: int
     RightMargin: int
     TopMargin: int
+    BottomMargin: int
+    FooterMargin: int
+    HeaderMargin: int
+    PANE_LOWER_RIGHT: int
+    PANE_UPPER_RIGHT: int
+    PANE_LOWER_LEFT: int
+    PANE_UPPER_LEFT: int
     def addMergedRegion(self, region: CellRangeAddress) -> None: ...
     def addMergedRegionUnsafe(self, region: CellRangeAddress) -> None: ...
     def addValidationData(self, data: DataValidation) -> None: ...
@@ -917,12 +967,12 @@ class SheetConditionalFormatting:
     def removeConditionalFormatting(self, index: int) -> None: ...
 
 class Workbook(Closeable):
-    PICTURE_TYPE_DIB: int
     PICTURE_TYPE_EMF: int
-    PICTURE_TYPE_JPEG: int
-    PICTURE_TYPE_PICT: int
-    PICTURE_TYPE_PNG: int
     PICTURE_TYPE_WMF: int
+    PICTURE_TYPE_PICT: int
+    PICTURE_TYPE_JPEG: int
+    PICTURE_TYPE_PNG: int
+    PICTURE_TYPE_DIB: int
     def addOlePackage(
         self, oleData: bytearray, label: AnyStr, fileName: AnyStr, command: AnyStr
     ) -> int: ...
